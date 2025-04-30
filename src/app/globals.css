@@ -1,26 +1,204 @@
-@import "tailwindcss";
+@config '../../tailwind.config.js';
+@import 'tailwindcss';
+/* @tailwind components;
+@tailwind utilities;
+@tailwind base; */
+
+
+
+.dancing-script-uniquifier {
+  font-family: "Dancing Script", cursive;
+  /* font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+}
+
+#fundoIndex{
+  background-image: url('./assets/image0.png');
+  background-size: cover;
+}
 
 :root {
-  --background: #ffffff;
+  --background: #e6eef5;
   --foreground: #171717;
+  --text-font-family:"Dancing Script", cursive;
 }
+
+.text-transicao{
+color: black;
+   transform: translateX(400px);
+   transition: transform 0.6s ease , opacity 0.6s ease;
+   transition-delay: 0.5s;
+   opacity: 0; /* Torna o texto visível por padrão */
+}
+
+.activar{
+transform: translateX(0);
+opacity: 1; /* Torna o texto visível quando ativado */
+}
+#fundo-imagem{
+ 
+  display: grid;
+  overflow: hidden;
+  grid-template-columns:  1fr;
+  grid-template-rows:  100vh;
+ place-items: center;
+  background-image: url('../../src/app/assets/fundo1.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+
+
+.card {
+  width: 350px;
+  height: 300px;
+  padding: 20px;
+  color: black;
+  background: linear-gradient(#ffffff, #ffffff) padding-box,
+              linear-gradient(145deg, transparent 35%,#fff236, #40e9ff) border-box;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  transform-origin: right bottom;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card .main-content {
+  flex: 1;
+}
+
+.card .header span:first-child {
+  font-weight: 600;
+  color: #717171;
+  /* margin-right: 4px; */
+}
+
+#head{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+}
+.card .heading {
+  font-size: 24px;
+  margin: 24px 0 16px;
+  font-weight: 600;
+}
+
+.card .categories {
+  display: flex;
+  gap: 8px;
+}
+
+.card .categories span {
+  background-color: #e81cff;
+  padding: 4px 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: 50em;
+}
+
+#card-personalizado{
+
+  clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
+  background-attachment: fixed;
+
+}
+
+.card:hover {
+  rotate: 7deg;
+}
+
+/* #div-margin- {
+    margin-top: 0rem;
+    overflow: hidden;
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+  } */
+
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-montserrat: "Montserrat", sans-serif; 
+  --p-right: var(--padding) ;
+  --font-cursiva: "Dancing Script", cursive;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (min-width: 21.5rem) and (max-width: 37.5rem) {
+
+  #card-personalizado{
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    background-attachment: fixed;
+  
+  }
+
+  #fundo-imagem{
+    display: grid;
+    overflow: hidden;
+    grid-template-columns:  1fr;
+    grid-template-rows:  89.9vh;
+   place-items: center;
+    background-image: url('../../src/app/assets/fundo1.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+
+
+
+  
+}
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    
+      scroll-padding-top: 4rem; 
+  }
+
+  /* For Firefox. */
+  * {
+      scrollbar-width: none;
+     
+  }
+  body{
+    background-color: #fdfdfdf8;
+  }
+
+  /* For WebKit (Chrome & Safari). */
+  ::-webkit-scrollbar {
+      display: none;
   }
 }
 
-body {
+
+/* html,body {
+  display: block !important;
+  opacity: 1 !important;
+  visibility: unset !important;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+
+} */
+
