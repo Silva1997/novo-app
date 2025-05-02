@@ -98,14 +98,14 @@ export default function PacotesCateringVertical() {
   };
 
   return (
-    <div  >
-      <div  className='mt-60 text-center py-8'>
+    <div  className='mobile:p-4 overflow-hidden' >
+      <div  className='xl:mt-60 mobile:mt-[88rem] text-center  xl:py-8'>
         <h2 className='text-center text-black text-3xl font-montserrat font-[500] uppercase'>Pacotes de Catering</h2>
-        <p className='text-lg  text-gray-600 font-montserrat'>Oferecemos pacotes especiais para cada tipo de evento</p>
+        <p className=' mobile:text-md xl:text-lg  text-gray-600 font-montserrat'>Oferecemos pacotes especiais para <br className='xl:hidden'/> cada tipo de evento</p>
       </div>
 
-      <div className='flex flex-col items-center gap-8'>
-        <div className='flex flex-row    items-center gap-8'>
+      <div className='flex mobile:p-4 flex-col items-center xl:gap-8'>
+        <div className='flex flex-row    items-center mobile:gap-4 xl:gap-8'>
         <Butao
           texto=""
           direcao="esquerda"
@@ -113,12 +113,12 @@ export default function PacotesCateringVertical() {
           disabled={inicio === 0}
         />
 
-        <div className='flex flex-row gap-1'>
+        <div className='flex mobile:flex-col xl:flex-row mobile:gap-y-7 xl:gap-1'>
           {mostrarPacotes.map((pacote) => (
 
 <div key={pacote.id} className={`flex flex-col items-center justify-center   rounded-xl shadow-lg w-72  overflow-hidden ${
     // Se for o card do meio (índice 1 no array de 3 cards mostrados     background: linear-gradient(135deg, rgb(251, 188, 5), rgb(245, 124, 0));)
-    mostrarPacotes.findIndex(p => p.id === pacote.id) === 1 ? 'h-96 z-20 bg-gradient-to-r from bg-amber-500 to-yellow-300 text-white' : `h-80 bg-gradient-to-l from bg-white to-zinc-50 relative top-8 z-10`
+    mostrarPacotes.findIndex(p => p.id === pacote.id) === 1 ? 'h-96 z-20 bg-gradient-to-r from bg-amber-500 to-yellow-300 text-white' : `h-80 bg-gradient-to-l from bg-white to-zinc-50 relative xl:top-8 z-10`
   }`}>
               <div className={`${pacote.cor} w-full h-1/3 rounded-[0px_0px_0px_24px] flex items-center justify-center`}>
                 <span className='text-lg font-medium font-montserrat '>{pacote.nome}</span>

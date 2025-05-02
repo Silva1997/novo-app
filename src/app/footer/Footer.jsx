@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Footer() {
     return (
-        <footer className=" bg-gradient-to-r from bg-[#101010] to-indigo-950  xl:mt-56 mobile:mt-[100rem]">
+        <footer className=" bg-gradient-to-r from bg-[#101010] to-indigo-950  xl:mt-56 mobile:mt-[12rem]">
             <div className="mobile:flex xl:grid xl:grid-cols-3 xl:p-12  xl:gap-12  overflow-hidden mobile:flex-col text-white mobile:gap-y-14 mobile:items-start mobile:p-4">
 
                 {/* xl:row-start-3 mobile:p-0 mobile:m-0  mobile:flex-col mobile:gap-y-28  text-white  flex xl:gap-[6.20rem] flex-wrap items-center  mobile:justify-center xl:justify-around */}

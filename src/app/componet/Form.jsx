@@ -4,7 +4,7 @@
 export const Formulario = () => {
 
     return (
-        <div className="bg-gradient-to-r from bg-[#101010] to-indigo-950 mt-20 py-4 px-16">
+        <div className="bg-gradient-to-r from bg-[#101010] to-indigo-950 mobile:p-4 mobile:mt-[1rem] overflow-hidden  xl:mt-20 xl:py-4 xl:px-16">
             <div id="Contactos" className="flex  items-center flex-col justify-center gap-20 ">
                 <div>
                     <h5 style={{ marginTop: '3rem' }} className="text-center text-white text-3xl font-montserrat font-[500] uppercase ">
@@ -15,7 +15,7 @@ export const Formulario = () => {
                 </div>
 
 
-                <div className="flex  flex-row gap-56">
+                <div className="flex mobile:flex-col  xl:flex-row mobile:gap-20 xl:gap-56">
                     <div className="flex items-center gap-2 flex-col" >
                         <div >
                             <svg id='items-color' fill="yellow" aria-hidden="true" width={'25'} class="e-font-icon-svg e-fas-location-arrow" viewBox="0 0 512 512"
@@ -62,16 +62,16 @@ export const Formulario = () => {
 
 
 
-            <div style={{ marginTop: '4rem', marginBottom: "4rem" }} className="overflow-hidden" >
+            <div className="mt-[4rem] mb-[4rem] overflow-hidden" >
 
-                <div style={{padding:'0.5rem'}} className="flex flex-row gap-4 items-center justify-center">
-                    <input type="text" placeholder="Nome" className="input input-info border-2 border-white  text-black w-[80rem] h-10  pl-3" />
-                    <input type="text" placeholder="Email" className=" input input-info border-2 border-white  text-black w-[80rem] h-10  pl-3" />
-                    <input type="number" maxLength={8} max={8} placeholder="Contacto" className=" input input-info border-2 border-white  text-black w-[80rem] h-10  pl-3" />
+                <div  className="flex p-2 mobile:flex-col xl:flex-row mobile:gap-8 xl:gap-4 items-center justify-center">
+                    <input type="text" placeholder="Nome" className="input input-info border-2 border-white  text-black  mobile:w-[23.5rem] xl:w-[80rem] h-10  pl-3" />
+                    <input type="text" placeholder="Email" className=" input input-info border-2 border-white  text-black  mobile:w-[23.5rem] xl:w-[80rem] h-10  pl-3" />
+                    <input type="number" maxLength={8} max={8} placeholder="Contacto" className=" input input-info border-2 border-white  text-black  mobile:w-[23.5rem] xl:w-[80rem] h-10  pl-3" />
                 </div>
 
-                <div style={{ marginTop: '4rem' }} className="flex flex-col gap-8 items-center justify-center gap-y-6">
-                    <textarea placeholder="Mensagem" className=" textarea-info textarea border-2 border-white text-black w-[76rem] h-36  pl-3" />
+                <div className="flex mt-14 flex-col gap-8 items-center justify-center gap-y-6">
+                    <textarea placeholder="Mensagem" className=" textarea-info textarea border-2 border-white text-black mobile:w-[23.5rem] xl:w-[76rem] h-36  pl-3" />
                     <button className=" cursor-pointer text-center text-lg text-white w-44 h-11 bg-amber-300 rounded-2xl ">Enviar</button>
                 </div>
 

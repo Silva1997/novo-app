@@ -10,7 +10,7 @@ export default function Carousel() {
 
     const slides = [
         { id: 1, content: "Sabores que encantam", bgColor: "bg-blue-500", icon: Imagem1 },
-        { id: 2, content: "Celebre com excelência", bgColor: "bg-red-500", icon: Imagem2 },
+        // { id: 2, content: "Celebre com excelência", bgColor: "bg-red-500", icon: Imagem2 },
         { id: 3, content: "Momentos que marcam", bgColor: "bg-yellow-500", icon: Imagem3 },
     ];
 
@@ -31,7 +31,7 @@ export default function Carousel() {
         // <div className="flex mt-4  items-center justify-center border-2 border-amber-300 ">
 
 
-        <div id="Eventos" className="flex flex-col mt-14 items-center">
+        <div id="Eventos" className="flex flex-col mt-14 mb-6 items-center">
 
             <div>
                 <h5 className="text-center mb-6 text-black text-3xl font-montserrat font-[500] uppercase ">
@@ -42,19 +42,20 @@ export default function Carousel() {
             </div>
             
             {/* Contêiner do Carousel ${slide.bgColor} */}
-            <div className="relative overflow-hidden w-full max-w-5xl h-[68vh] rounded-xl border-2 border-amber-300 p-2">
+            <div className="relative overflow-hidden mobile:p-4 mobile:w-96 xl:w-full max-w-5xl mobile:h-[60dvh] xl:h-[68vh] rounded-xl border-2 border-amber-300 p-2">
                 {/* Slides */}
                 {/* <div className="absolute inset-0 bg-amber-200 opacity-100 w-full h-full z-10"> */}
                     <div
-                        className="flex transition-transform duration-500"
+                        className="flex transition-transform duration-500 mobile:gap-x-3"
                         style={{
+                       
                             transform: `translateX(-${currentIndex * 100}%)`,
                         }}
                     >
                         {slides.map((slide, index) => (
                             <div
                                 key={slide.id}
-                                className="relative flex-shrink-0 w-full h-[65vh] rounded-xl flex items-center justify-center text-center text-white"
+                                className="relative flex-shrink-0 mobile:w-[100%] mobile:h-[56vh] xl:w-full xl:h-[65vh] rounded-xl flex items-center justify-center text-center text-white"
                                 style={{
                                     backgroundImage: `url(${slide.icon?.src})`,
                                     backgroundSize: "cover",
@@ -71,7 +72,7 @@ export default function Carousel() {
                                         }`}
                                 >
 
-                                    <h5 className="text-white text-2xl font-montserrat font-bold">
+                                    <h5 className="text-white mobile:text-lg xl:text-2xl font-montserrat font-bold">
                                         {slide.content}
 
                                     </h5>
