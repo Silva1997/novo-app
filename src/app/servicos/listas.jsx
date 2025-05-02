@@ -4,38 +4,12 @@ import Card from '../utlis/cardItem'
 
 export default function Servicos() {
   return (
-    <div id='servic' className='h-screen' >
-      <h2 style={{ marginTop: '1.5rem', paddingBottom: '1rem' }} className="text-center text-3xl font-montserrat font-[500] uppercase ">Nossos Serviços</h2>
+    <div id='servic' className='h-[200%] overflow-hidden' >
+      <h2 className=" mt-6 pb-4 text-center mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">Nossos Serviços</h2>
 
-      <div className="xl:mx-9 xl:p-7  mobile:p-4   text-black place-items-center mobile:grid-cols-1 mobile:gap-x-4 mobile:gap-y-4  grid xl:grid-cols-3 xl:grid-rows-[58dvh]   xl:gap-x-5 xl:gap-y-5  overflow-hidden ">
+      <div className="xl:mx-9 xl:p-7  mobile:p-4   text-black place-items-center mobile:grid-cols-1 mobile:gap-x-4 mobile:gap-y-4  grid xl:grid-cols-3 xl:grid-rows-[58dvh]   xl:gap-x-5 xl:gap-y-5 ">
 
         {
-
-          // Card.map((index) => (
-
-          //   <div key={index.id} className="card">
-
-
-
-          //     <div className="main-content">
-          //       <div className="header">
-          //         <span>{index.title}</span>
-          //         {/* <span>Gastronômicos</span> */}
-          //       </div>
-
-          //       <div className="categories">
-
-          //         <p>
-          //           {index.desc}
-          //         </p>
-
-          //       </div>
-          //     </div>
-
-          //   </div>
-
-          // ))
-
 
 
           Card.map((index) => (
@@ -43,9 +17,10 @@ export default function Servicos() {
             <div
               key={index.id}
               style={{ padding: '7px' }}
-              className="w-full h-[350px] rounded-xl transition xl:hover:scale-95
+              className="w-full mobile:h-76 xl:h-[350px] rounded-xl transition xl:hover:scale-95
                hover:cursor-pointer 
-bg-gradient-to-r from bg-[#fdfcfc] to-zinc-50               shadow-[0px_0px_8px_rgba(0,0,0,0.09)]  space-y-3 relative overflow-hidden"
+               bg-gradient-to-r from bg-[#fdfcfc] to-zinc-50   
+               shadow-[0px_0px_8px_rgba(0,0,0,0.09)]  space-y-3 relative overflow-hidden"
             >
               <div className="w-20 h-20 bg-yellow-300 rounded-full absolute -right-5 -top-7">
                 <p className="absolute bottom-4 left-7 text-white text-2xl">{index.id}</p>
@@ -53,11 +28,11 @@ bg-gradient-to-r from bg-[#fdfcfc] to-zinc-50               shadow-[0px_0px_8px_
 
               <div id="head" style={{ marginTop: '24px' }}>
                 <span>{index.icon}</span>
-                <h1 className="font-medium mobile:text-lg xl:text-xl font-montserrat ">{index.title}</h1>
+                <h1 className="font-medium mobile:text-xl xl:text-xl font-montserrat ">{index.title}</h1>
               </div>
 
               <div style={{ marginTop: '24px' }} id="content" className="flex flex-col leading-6 ">
-                <p className="text-lg text-start text-zinc-500 leading-6 font-montserrat">
+                <p className="text-lg  tracking-tight text-start text-zinc-500 leading-6 font-montserrat">
                   {index.desc}
                 </p>
               </div>

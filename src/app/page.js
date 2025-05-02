@@ -47,18 +47,18 @@ export default function Home() {
         <div id="sobre"  >
           <div id="card-personalizado" >
 
-            <div id="div-margin-" className="bg-gradient-to-r from bg-[#101010] to-indigo-950 mobile:py-4 mobile:px-4  xl:px-16 gap-8 justify-center  mobile:flex mobile:flex-col mobile:h-full   flex flex-row items-center lg:h-80 " >
+            <div id="div-margin-" className="bg-gradient-to-r from bg-[#101010] to-indigo-950 mobile:py-8 mobile:px-4  xl:px-16 gap-8 justify-center  mobile:flex mobile:flex-col mobile:h-full   flex flex-row items-center lg:h-80 " >
 
               <div className=" relative xl:-top-6" >
 
-                <div style={{ marginBottom: '0.75rem' }} className="  flex flex-row items-center justify-start gap-1 leading-4">
+                <div  className="  xl:mb-2 flex flex-row items-center justify-start gap-1 leading-4">
                   <Image style={{ padding: '2.5px' }} placeholder="empty" className="bg-amber-300 rounded-3xl" src={icon5} alt="about" width={30} height={30} />
-                  <h6 className="text-yellow-300 text-start font-medium text-2xl -my-2 font-montserrat ">
+                  <h6 className="text-yellow-300 text-start font-montserrat font-medium text-2xl -my-2">
                     SOBRE NÓS
                   </h6>
                 </div>
 
-                <p className="text-white mobile:text-start mobile:text-sm xl:text-md xl:text-start font-montserrat font-[400]">
+                <p className="text-white mobile:text-start mobile:text-md xl:text-md xl:text-start font-montserrat font-[400] mobile:py-3">
                   Integrada em um grupo empresarial de renome,
                   a nossa atuação destaca-se pela posição de referência
                   que ocupamos no mercado angolano.
@@ -69,30 +69,30 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className=" relative -top-6">
+              <div className=" relative xl:-top-6">
                 <div style={{ marginBottom: '0.75rem' }} className="flex flex-row items-center justify-start gap-1 leading-4">
                   <Image style={{ padding: '2.5px' }} placeholder="empty" className="bg-amber-300 rounded-3xl" src={icon3} alt="miss" width={30} height={30} />
-                  <h6 className="text-yellow-300 text-start font-medium text-2xl -my-2">
+                  <h6 className="text-yellow-300 text-start font-montserrat font-medium text-2xl -my-2">
                     MISSÃO
                   </h6>
                 </div>
-                <p className="text-white mobile:text-start mobile:text-sm xl:text-md xl:text-start font-montserrat font-[400]">
+                <p className="text-white mobile:text-start mobile:text-md xl:text-md xl:text-start font-montserrat font-[400] mobile:py-3">
                   Atuamos como parceiros na modernização empresarial.
                   Promovemos soluções para o crescimento sustentável.
                   Trabalhamos para alcançar o sucesso das organizações.
                 </p>
               </div>
 
-              <div className=" relative -top-6" >
+              <div className=" relative xl:-top-6" >
                 <div style={{ marginBottom: '0.75rem' }} className="flex flex-row items-center justify-start gap-1 leading-4">
                   <Image style={{ padding: '1.5px' }} placeholder="empty" className="bg-amber-300 rounded-3xl object-cover" src={icon4} alt="miss" width={30} height={30} />
-                  <h6 className="text-yellow-300 text-start font-medium text-2xl -my-2">
+                  <h6 className="text-yellow-300 text-start font-montserrat font-medium text-2xl -my-2">
                     VALORES
                   </h6>
                 </div>
 
                 {/* </span> */}
-                <p className="text-white mobile:text-start mobile:text-sm xl:text-md xl:text-start font-montserrat font-[400]">
+                <p className="text-white mobile:text-start mobile:text-md xl:text-md xl:text-start font-montserrat font-[400] mobile:py-3">
                   Dedicação ao profissionalismo.<br className="xl:hidden" />
                   Busca contínua pela excelência.<br className="xl:hidden" />
                   Trabalho conjunto e colaborativo.

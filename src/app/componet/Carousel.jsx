@@ -31,10 +31,10 @@ export default function Carousel() {
         // <div className="flex mt-4  items-center justify-center border-2 border-amber-300 ">
 
 
-        <div id="Eventos" className="flex flex-col mt-14 mb-6 items-center">
+        <div id="Eventos" className="flex flex-col mt-14 mobile:p-4 mb-2 items-center">
 
             <div>
-                <h5 className="text-center mb-6 text-black text-3xl font-montserrat font-[500] uppercase ">
+                <h5 className="text-center mb-6 text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">
                     Nossos Eventos
 
                 </h5>
@@ -42,7 +42,7 @@ export default function Carousel() {
             </div>
             
             {/* Contêiner do Carousel ${slide.bgColor} */}
-            <div className="relative overflow-hidden mobile:p-4 mobile:w-96 xl:w-full max-w-5xl mobile:h-[60dvh] xl:h-[68vh] rounded-xl border-2 border-amber-300 p-2">
+            <div className="relative overflow-hidden  mobile:max-w-2xl   xl:w-full max-w-5xl mobile:h-[60dvh] xl:h-[68vh] rounded-xl border-2 border-amber-300 p-2">
                 {/* Slides */}
                 {/* <div className="absolute inset-0 bg-amber-200 opacity-100 w-full h-full z-10"> */}
                     <div
