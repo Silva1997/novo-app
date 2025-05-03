@@ -1,13 +1,36 @@
 
-import React from 'react'
-import Card from '../utlis/cardItem'
+import React from 'react';
+import Card from '../utlis/cardItem';
+
+import icon from '../assets/image0.png';
 
 export default function Servicos() {
-  return (
-    <div id='servic' className='h-[200%] overflow-hidden' >
-      <h2 className=" mt-6 pb-4 text-center mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">Nossos Serviços</h2>
 
-      <div className="xl:mx-9 xl:p-7  mobile:p-4   text-black place-items-center mobile:grid-cols-1 mobile:gap-x-4 mobile:gap-y-4  grid xl:grid-cols-3 xl:grid-rows-[58dvh]   xl:gap-x-5 xl:gap-y-5 ">
+  return (
+    <div id='servic' className='bg-zinc-50 mobile:h-auto xl:h-[160vh] overflow-hidden' >
+
+    <div>
+        
+    <h2 className=" mt-6  text-center mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">Nossos Serviços</h2>
+      <p className=' text-center mobile:text-sm xl:text-lg  text-gray-600 font-montserrat'>
+        Somos a sua escolha premium para <br className='xl:hidden' /> transformar os  seus eventos  em experiências <br /> verdadeiramente memoráveis.
+      </p>
+    </div>
+
+      <div className="
+      xl:mt-16
+      grid 
+      place-items-center
+      xl:grid-cols-3 
+      xl:gap-x-3
+      xl:gap-y-32
+      xl:mx-9 xl:p-7 
+      mobile:p-4  
+      text-black 
+      mobile:grid-cols-1
+      mobile:gap-x-4 mobile:gap-y-4  
+
+       ">
 
         {
 
@@ -16,30 +39,48 @@ export default function Servicos() {
 
             <div
               key={index.id}
-              style={{ padding: '7px' }}
-              className="w-full mobile:h-76 xl:h-[350px] rounded-xl transition xl:hover:scale-95
+              // style={{ padding: '7px' xl:hover:scale-105     bg-gradient-to-r from bg-[#fff] to-zinc-50 }}
+              className="
+               flex flex-col gap-y-2
+              w-full mobile:h-80 xl:h-[145%] rounded-sm transition 
                hover:cursor-pointer 
-               bg-gradient-to-r from bg-[#fdfcfc] to-zinc-50   
-               shadow-[0px_0px_8px_rgba(0,0,0,0.09)]  space-y-3 relative overflow-hidden"
+              bg-white
+               shadow-[0px_0px_8px_rgba(0,0,0,0.09)]  space-y-3 relative overflow-hidden
+              "
             >
-              <div className="w-20 h-20 bg-yellow-300 rounded-full absolute -right-5 -top-7">
-                <p className="absolute bottom-4 left-7 text-white text-2xl">{index.id}</p>
-              </div>
+              {/* content */}
+              <div className='mobile:h-40 xl:h-56  transition-transform ease-in xl:hover:scale-105 '
+                style={{
+                  backgroundImage: `url(${icon?.src})`,
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
 
-              <div id="head" style={{ marginTop: '24px' }}>
-                <span>{index.icon}</span>
-                <h1 className="font-medium mobile:text-xl xl:text-xl font-montserrat ">{index.title}</h1>
-              </div>
+                }}
+              >
 
-              <div style={{ marginTop: '24px' }} id="content" className="flex flex-col leading-6 ">
-                <p className="text-lg  tracking-tight text-start text-zinc-500 leading-6 font-montserrat">
+                <div className="mobile:w-16 mobile:h-16 xl:w-20 xl:h-20  bg-yellow-300 rounded-full absolute mobile:-right-4 xl:-right-5 mobile:-top-4 xl:-top-7">
+
+                  <p className="absolute bottom-4 left-7 text-white text-2xl">{index.id}
+                  </p>
+
+                </div>
+
+                <div id="head" className='mt-2'>
+                  <span>{index.icon}</span>
+                  <h1 className="font-medium mobile:text-lg text-white xl:text-xl font-montserrat ">{index.title}</h1>
+                </div>
+
+
+              </div>
+              {/* contentsub */}
+              <div className="p-2 leading-6 h-1 ">
+
+                <p className=" text-md  tracking-tight text-start text-zinc-500 leading-6 font-montserrat">
                   {index.desc}
                 </p>
-              </div>
 
-              {/* <div className=" flex flex-1 items-center justify-center" style={{marginTop:'24px'}}>
-                    <button className="rounded-2xl bg-yellow-300 p-3 w-24 h-8">Saiba Mais</button>
-                     </div> */}
+              </div>
 
             </div>
 
@@ -57,42 +98,7 @@ export default function Servicos() {
 
 
       </div>
-      {/* 
-             <div className="flex items-center justify-center mt-12">
-             // Card.map((index) => (
-                 //   <div key={index.id} style={{ padding: '12px' }} className="bg-white rounded-xl  border-1 border-gray-100 w-full h-64  transform transition duration-500 hover:rotate-[8deg]">
-                 //     <h5 className="font-bold text-gray-800">{index.title}</h5>
-                 //     <p className="text-gray-700">
-                 //       {index.desc}
-                 //     </p>
-                 //   </div>
-   
-                 // ))
-   
-             <div className="card">
-                 <div className="main-content">
-                   <div className="header">
-                     <span>Workshops</span>
-                     <span>Gastronômicos</span>
-                   </div>
-                 
-                   <div className="categories">
-   
-                     <p>
-                     Transforme um evento em uma experiência
-                      única! Oferecemos workshops 
-                      culinários interativos, onde os participantes 
-                      aprendem e se divertem. Uma maneira envolvente
-                       de criar memórias especiais com amigos ou colegas.
-                     </p>
-                  
-                   </div>
-                 </div>
-              
-               </div>
-               </div> */}
 
-      {/* Planos */}
 
     </div>
   )

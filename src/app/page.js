@@ -44,7 +44,7 @@ export default function Home() {
         </div>
 
         {/* Sobre a Empresa */}
-        <div id="sobre"  >
+        <div id="sobre"  className="bg-zinc-50" >
           <div id="card-personalizado" >
 
             <div id="div-margin-" className="bg-gradient-to-r from bg-[#101010] to-indigo-950 mobile:py-8 mobile:px-4  xl:px-16 gap-8 justify-center  mobile:flex mobile:flex-col mobile:h-full   flex flex-row items-center lg:h-80 " >

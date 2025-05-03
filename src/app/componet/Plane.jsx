@@ -99,9 +99,9 @@ export default function PacotesCateringVertical() {
 
   return (
     <div  className='mobile:p-4 overflow-hidden' >
-      <div  className='xl:mt-60 mobile:mt-[10%] text-center  xl:py-8'>
+      <div  className='xl:mt-10 mobile:mt-[10%] text-center  xl:py-8'>
         <h2 className='text-center text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase'>Pacotes de Catering</h2>
-        <p className=' mobile:text-md xl:text-lg  text-gray-600 font-montserrat'>Oferecemos pacotes especiais para <br className='xl:hidden'/> cada tipo de evento</p>
+        <p className=' mobile:text-sm xl:text-lg  text-gray-600 font-montserrat'>Oferecemos pacotes especiais para <br className='xl:hidden'/> cada tipo de evento</p>
       </div>
 
       <div className='flex mobile:p-4 flex-col items-center xl:gap-8'>

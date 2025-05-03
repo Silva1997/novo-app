@@ -3,6 +3,7 @@
 import Navegador from "./nav/nav";
 import "./globals.css";
 import Footer from "./footer/Footer";
+import Mapa from "./utlis/Google";
 
 export const metadata = {
   title: "Meu app",
@@ -40,6 +41,7 @@ export default function RootLayout({ children }) {
         <Navegador />
         {children}
 
+        {/* <Mapa/> */}
         <Footer />
       </body>
     </html>

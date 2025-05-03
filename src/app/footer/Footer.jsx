@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaSquareWhatsapp } from "react-icons/fa6";
+import { FaInstagram } from "react-icons/fa6";
 
 
 export default function Footer() {

@@ -34,21 +34,25 @@ export default function Carousel() {
         <div id="Eventos" className="flex flex-col mt-14 mobile:p-4 mb-2 items-center">
 
             <div>
-                <h5 className="text-center mb-6 text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">
+                <h5 className="text-center  text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">
                     Nossos Eventos
-
                 </h5>
-                {/* <p className="text-center text-xl text-zinc-500 font-montserrat">Envia-nos uma mensagem, e vamos juntos construir o futuro</p> */}
+                <p className="text-center mobile:text-sm  xl:text-lg text-zinc-500 font-montserrat"> criando sempre experiências que deixam marcas inesquecíveis.</p>
             </div>
             
             {/* Contêiner do Carousel ${slide.bgColor} */}
-            <div className="relative overflow-hidden  mobile:max-w-2xl   xl:w-full max-w-5xl mobile:h-[60dvh] xl:h-[68vh] rounded-xl border-2 border-amber-300 p-2">
-                {/* Slides */}
-                {/* <div className="absolute inset-0 bg-amber-200 opacity-100 w-full h-full z-10"> */}
+            <div className="relative overflow-hidden mobile:max-w-3xl xl:w-full max-w-5xl mobile:h-[63dvh] xl:h-[68vh] rounded-xl p-2">
+                {/* Gradiente na borda */}
+                <div className="absolute inset-0 rounded-xl border-0 p-[2px] ">
+                    <div className="w-full h-full  rounded-xl"></div>
+                </div>
+
+                {/* Conteúdo do Carousel */}
+                <div className="relative z-10">
+                    {/* Slides */}
                     <div
                         className="flex transition-transform duration-500 mobile:gap-x-3"
                         style={{
-                       
                             transform: `translateX(-${currentIndex * 100}%)`,
                         }}
                     >
@@ -82,10 +86,8 @@ export default function Carousel() {
                                 {/* </div> */}
                             </div>
                         ))}
-                    {/* </div> */}
-
+                    </div>
                 </div>
-
             </div>
 
             {/* Botões de Navegação */}
