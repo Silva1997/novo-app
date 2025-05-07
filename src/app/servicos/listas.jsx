@@ -49,9 +49,10 @@ export default function Servicos() {
               "
             >
               {/* content */}
-              <div className='mobile:h-40 xl:h-56  transition-transform ease-in xl:hover:scale-105 '
+              <div className='mobile:h-48 xl:h-56  transition-transform ease-in xl:hover:scale-105 '
                 style={{
-                  backgroundImage: `url(${icon?.src})`,
+                  backgroundImage:`url(${index.icones?.src})`,
+                  // backgroundImage: `url(${icon?.src})`,
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center",
@@ -59,9 +60,9 @@ export default function Servicos() {
                 }}
               >
 
-                <div className="mobile:w-16 mobile:h-16 xl:w-20 xl:h-20  bg-yellow-300 rounded-full absolute mobile:-right-4 xl:-right-5 mobile:-top-4 xl:-top-7">
+                <div className="mobile:w-16 mobile:h-16 xl:w-16 xl:h-16  bg-yellow-300 rounded-full absolute mobile:-right-4 xl:-right-3 mobile:-top-4 xl:-top-5">
 
-                  <p className="absolute bottom-4 left-7 text-white text-2xl">{index.id}
+                  <p className="absolute bottom-4 left-6 text-white text-xl">{index.id}
                   </p>
 
                 </div>
@@ -74,7 +75,7 @@ export default function Servicos() {
 
               </div>
               {/* contentsub */}
-              <div className="p-2 leading-6 h-1 ">
+              <div className="p-2 relative mobile:-top-6 leading-1 h-1 ">
 
                 <p className=" text-md  tracking-tight text-start text-zinc-500 leading-6 font-montserrat">
                   {index.desc}

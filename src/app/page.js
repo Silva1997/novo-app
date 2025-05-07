@@ -32,9 +32,9 @@ export default function Home() {
               Celebramos seus momentos <br /> com execelência
             </p>
 
-            <Link style={{ padding: '8px' }} href="#" className=" hover:bg-amber-300 hover:border-blue-600/80 flex flex-row items-center text-lg gap-2 justify-center text-center text-white w-32 border-2 border-white  rounded-3xl z-10">
+            <Link style={{ padding: '8px' }} href="#" className="animate-fade-right animate-once animate-duration-200 animate-delay-200 hover:bg-amber-300 hover:border-blue-600/80 flex flex-row items-center text-lg gap-2 justify-center text-center text-white w-32 border-2 border-white  rounded-3xl z-10">
               Sobre
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width={'24'} fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
               </svg>
 

@@ -51,7 +51,7 @@ export default function Carousel() {
                 <div className="relative z-10">
                     {/* Slides */}
                     <div
-                        className="flex transition-transform duration-500 mobile:gap-x-3"
+                        className="flex transition-transform duration-500 xl:gap-x-5 mobile:gap-x-3"
                         style={{
                             transform: `translateX(-${currentIndex * 100}%)`,
                         }}
