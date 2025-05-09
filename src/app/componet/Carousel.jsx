@@ -2,11 +2,13 @@ import React, { useState } from "react";
 // import Image from "next/image";
 import Imagem1 from '../assets/image0.png';
 import Imagem2 from '../assets/image1.png';
-import Imagem3 from '../assets/image2.png'
+import Imagem3 from '../assets/image1.png';
+import Chefe1 from './chefe2.png';
 
 export default function Carousel() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
+
 
     const slides = [
         { id: 1, content: "Sabores que encantam", bgColor: "bg-blue-500", icon: Imagem1 },
@@ -26,90 +28,184 @@ export default function Carousel() {
         );
     };
 
+
+// 
+const Equipe = [
+    {
+      nome: "Carlos Silva",
+      cargo: "Chefe de Cozinha",
+      habilidades: "Mestre na culinária angolana, especialista em pratos típicos como moamba e mufete, e liderança na cozinha.",
+      experiencia: "Mais de 15 anos comandando cozinhas de prestígio e elevando sabores tradicionais com um toque contemporâneo.",
+    },
+    {
+      nome: "Mariana Santos",
+      cargo: "Garçonete",
+      habilidades: "Atendimento caloroso, conhecimento das tradições gastronômicas locais e serviço ágil e eficiente.",
+      experiencia: "8 anos proporcionando hospitalidade com o verdadeiro espírito angolano, garantindo que cada cliente seja unico.",
+    },
+    {
+      nome: "Ana Costa",
+      cargo: "Pasteleira",
+      habilidades: "Especialista em doces típicos angolanos como bolo de ginguba e cocada, além de confeitaria fina.",
+      experiencia: "12 anos aperfeiçoando receitas tradicionais e inovando na arte da confeitaria para encantar os paladares.",
+    },
+    {
+        nome: "Costa Junior",
+        cargo: "Bar Men",
+        habilidades: "Especialista em doces típicos angolanos como bolo de ginguba e cocada, além de confeitaria fina.",
+        experiencia: "12 anos aperfeiçoando receitas tradicionais e inovando na arte da confeitaria para encantar os paladares.",
+      },
+  ];
+  
+
+
+
+
+
+
     return (
+        <>
+            {/* Nossos Eventos */}
+            <div id="Eventos" className="flex flex-col mt-14 mobile:p-4 mb-0 items-center">
 
-        // <div className="flex mt-4  items-center justify-center border-2 border-amber-300 ">
-
-
-        <div id="Eventos" className="flex flex-col mt-14 mobile:p-4 mb-2 items-center">
-
-            <div>
-                <h5 className="text-center  text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">
-                    Nossos Eventos
-                </h5>
-                <p className="text-center mobile:text-sm  xl:text-lg text-zinc-500 font-montserrat"> criando sempre experiências que deixam marcas inesquecíveis.</p>
-            </div>
-            
-            {/* Contêiner do Carousel ${slide.bgColor} */}
-            <div className="relative overflow-hidden mobile:max-w-3xl xl:w-full max-w-5xl mobile:h-[63dvh] xl:h-[68vh] rounded-xl p-2">
-                {/* Gradiente na borda */}
-                <div className="absolute inset-0 rounded-xl border-0 p-[2px] ">
-                    <div className="w-full h-full  rounded-xl"></div>
+                <div className="py-2 px-4">
+                    <h5 className="text-center  text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">
+                        Nossos Eventos
+                    </h5>
+                    <p className="text-center mobile:text-sm  xl:text-lg text-zinc-500 font-montserrat"> criando sempre experiências que deixam marcas inesquecíveis.</p>
                 </div>
 
-                {/* Conteúdo do Carousel */}
-                <div className="relative z-10">
-                    {/* Slides */}
-                    <div
-                        className="flex transition-transform duration-500 xl:gap-x-5 mobile:gap-x-3"
-                        style={{
-                            transform: `translateX(-${currentIndex * 100}%)`,
-                        }}
-                    >
-                        {slides.map((slide, index) => (
-                            <div
-                                key={slide.id}
-                                className="relative flex-shrink-0 mobile:w-[100%] mobile:h-[56vh] xl:w-full xl:h-[65vh] rounded-xl flex items-center justify-center text-center text-white"
-                                style={{
-                                    backgroundImage: `url(${slide.icon?.src})`,
-                                    backgroundSize: "cover",
-                                    backgroundRepeat: "no-repeat",
-                                    backgroundPosition: "center",
-                                }}
-                            >
-                                {/* Overlay */}
-                                <div className="absolute inset-0 bg-indigo-500/15 rounded-xl"></div>
+                {/* Contêiner do Carousel ${slide.bgColor} */}
 
-                                {/* Texto */}
-                                <article
-                                    className={`relative z-20 text-transicao ${index === currentIndex ? "activar" : ""
-                                        }`}
+
+                
+                <div className="relative border-2 border-violet-500 overflow-hidden mobile:max-w-[76rem] xl:w-screen xl:max-w-[76rem] mobile:h-[63dvh] xl:h-[72vh] rounded-xl px-4 py-2">
+                    {/* Gradiente na borda */}
+                    <div className="absolute inset-0 rounded-xl border-0 p-[2px] ">
+                        <div className="w-full h-full  rounded-xl"></div>
+                    </div>
+
+                    {/* Conteúdo do Carousel */}
+                    <div className="relative z-10">
+                        {/* Slides */}
+                        <div
+                            className="flex transition-transform duration-500 xl:gap-x-1 mobile:gap-x-3"
+                            style={{
+                                transform: `translateX(-${currentIndex * 100}%)`,
+                            }}
+                        >
+                            {slides.map((slide, index) => (
+                                <div
+                                    key={slide.id}
+                                    className="relative flex-shrink-0 mobile:w-[100%] mobile:h-[60vh] xl:w-[100%] xl:h-[69vh] rounded-xl flex items-center justify-center text-center text-white"
+                                    style={{
+                                        backgroundImage: `url(${slide.icon?.src})`,
+                                        backgroundSize: "cover",
+                                        backgroundRepeat: "no-repeat",
+                                        backgroundPosition: "center",
+                                    }}
                                 >
+                                    {/* Overlay */}
+                                    <div className="absolute inset-0 bg-indigo-500/15 rounded-xl"></div>
 
-                                    <h5 className="text-white mobile:text-lg xl:text-2xl font-montserrat font-bold">
-                                        {slide.content}
+                                    {/* Texto */}
+                                    <article
+                                        className={`relative z-20 text-transicao ${index === currentIndex ? "activar" : ""
+                                            }`}
+                                    >
 
-                                    </h5>
+                                        <h5 className="text-white mobile:text-lg xl:text-2xl font-montserrat font-bold">
+                                            {slide.content}
+
+                                        </h5>
 
 
-                                </article>
-                                {/* </div> */}
-                            </div>
-                        ))}
+                                    </article>
+                                    {/* </div> */}
+                                </div>
+                            ))}
+                        </div>
                     </div>
                 </div>
+
+                {/* Botões de Navegação */}
+                <div className="flex justify-center space-x-4 mt-4">
+                    <button
+                        onClick={preSlider}
+                        className="bg-gradient-to-r from bg-gray-500 to-black  text-white px-3 py-2 rounded-4xl active:scale-95 transition-transform"
+                    >
+                        ←
+                        {/* Anterior */}
+                    </button>
+
+                    <button
+                        onClick={proximoSlider}
+                        className="bg-gradient-to-r from bg-gray-500 to-black text-white px-3 py-2 rounded-4xl active:scale-95 transition-transform"
+                    >
+                        {/* Próximo */}
+                        →
+                    </button>
+                </div>
+
+
+
             </div>
 
-            {/* Botões de Navegação */}
-            <div className="flex justify-center space-x-4 mt-4">
-                <button
-                    onClick={preSlider}
-                    className="bg-gradient-to-r from bg-gray-500 to-black  text-white px-3 py-2 rounded-4xl active:scale-95 transition-transform"
-                >
-                    ←
-                    {/* Anterior */}
-                </button>
 
-                <button
-                    onClick={proximoSlider}
-                    className="bg-gradient-to-r from bg-gray-500 to-black text-white px-3 py-2 rounded-4xl active:scale-95 transition-transform"
-                >
-                    {/* Próximo */}
-                    →
-                </button>
+
+
+            {/* Nossa Equipa */}
+
+
+            <div id="#" className="flex flex-col mt-8 mobile:p-4  items-center">
+
+                <div>
+                    <h5 className="text-center  text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">
+                        Nossa Equipa
+                    </h5>
+                    <p className="text-center mobile:text-sm  xl:text-lg text-zinc-500 font-montserrat"> Profissionais qualificados.</p>
+                </div>
+
+                <div className=" xl:-mt-4  xl:grid xl:h-screen mobile:items-center mobile:justify-center w-full xl:grid-cols-4 mobile:flex mobile:flex-col mobile:gap-y-4 xl:place-items-center xl:gap-4 xl:px-16">
+                    {Equipe.map((equipe, index) => (
+                        <div
+                            key={index}
+                            className="  w-80  mobile:h-[35rem] xl:h-[89%] flex flex-col items-start px-4 overflow-hidden"
+                        >
+
+
+                           {/* Conteudo head */}
+                          <div className=" p-2 h-60 w-72">
+
+                          <div
+                                style={{
+                                    backgroundImage: `url(${Chefe1?.src})`,
+                          
+                                    backgroundSize: "cover",
+                                    backgroundRepeat: "no-repeat",
+                                    backgroundPosition: "center center",
+                                }}
+                                className="relative top-0 right-6 bg-zinc-200 w-60 mobile:h-[100%] xl:h-60 z-20 rounded-tl-3xl rounded-br-3xl p-2 grayscale-100 "
+                            ></div>
+
+                            {/* Fundo Secundário */}
+                            <div className="relative -top-[12.5rem] bg-amber-300 w-60 h-[100%] xl:h-60 z-10 rounded-tl-3xl rounded-br-3xl"></div>
+                          </div>
+
+                            {/* Conteúdo do Card */}
+                            <div className="relative top-14 flex flex-col  gap-1">
+                                <h2 className=" text-start text-xl text-blue-500  font-montserrat font-bold">{equipe.nome}</h2>
+                                <p className="text-blue-500 font-semibold text-md  text-start font-montserrat">{equipe.cargo}</p>
+                                <p className="text-black  font-montserrat text-start">{equipe.habilidades}</p>
+                                <p className="text-black  font-montserrat text-start">{equipe.experiencia}</p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+
             </div>
-        </div>
 
-        // </div>
+        </>
     );
 }

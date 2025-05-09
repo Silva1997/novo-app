@@ -15,7 +15,7 @@ export default function Footer() {
                     <hr className='border-b-2 mobile:w-[90vw] xl:w-[28.6vw]  border-amber-300 ' />
 
                     <p className=' text-justify font-montserrat leading-6'>Somos uma empresa angolana  especializada
-                        na organização e  gestão de feiras e eventos. 
+                        na organização e  gestão de feiras e eventos.
                         Integrada no  Grupo Aly, criada  em 2023. Tem tido um crescimento  exponencial
                         na sua  área de actuação,  tendo alcançado  uma posição  de  referência no mercado angolano.</p>
                 </div>
@@ -23,78 +23,79 @@ export default function Footer() {
                 <div className='relative '>
                     <strong className='font-montserrat font-medium  text-2xl text-yellow-300 leading-10'>Empresa</strong>
                     <hr className='border-b-2 mobile:w-[90vw] xl:w-[28.6vw]  border-amber-300 ' />
-                    <li className="list-none leading-6font-montserrat ">
-                        <ul>
+                    <ul className="list-none leading-6font-montserrat ">
+                        <li>
                             <span className='flex flex-row items-center'>
 
                                 <svg aria-hidden="true" fill='#fff' width={'14'} height={'14'} class="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>
                                 Sobre Nós
                             </span>
 
-                           
+
                             <hr className='border-b-[0.0313rem] w-full  border-white/15 ' />
 
-                        </ul>
-                        <ul>
+                        </li>
+                        <li>
                             <span className='flex flex-row items-center'>
                                 <svg aria-hidden="true" fill='#fff' width={'14'} height={'14'} class="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>
                                 Contato
                             </span>
 
-                         
+
                             <hr className='border-b-[0.0313rem] w-full  border-white/15 ' />
 
-                        </ul>
-                        <ul>
+                        </li>
+                        <li>
                             <span className='flex flex-row items-center'>
                                 <svg aria-hidden="true" fill='#fff' width={'14'} height={'14'} class="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>
                                 Documentos Legais
                             </span>
 
-                        
+
                             <hr className='border-b-[0.0313rem] w-full  border-white/15 ' />
-                        </ul>
-                    </li>
+                        </li>
+                    </ul>
                 </div>
 
                 <div className='relative '>
                     <strong className='font-montserrat font-medium  text-2xl text-yellow-300 leading-10'>Contacto</strong>
                     <hr className='border-b-2 mobile:w-[90vw] xl:w-[28.6vw]  border-amber-300 ' />
-                    <li className="list-none leading-6 font-montserrat">
-                        <ul >
+                    <ul className="list-none leading-6 font-montserrat">
+                        <li >
 
                             <span className='flex flex-row items-center'>
                                 <svg aria-hidden="true" fill='#fff' width={'14'} height={'14'} class="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>
 
                                 Telefone: (+244) 924 000 080
                             </span>
-                      
+
                             <hr className='border-b-[0.0313rem] w-full  border-white/15 ' />
-                            {/* Whatsapp
-Facebook
-Instagram
-Linkedin */}
-                        </ul>
-                        <ul >
+                            <div className='flex flex-row gap-2'>
+                                <FaFacebookSquare />
+                                <FaInstagram />
+                                <FaSquareWhatsapp />
+                                </div>
+                        </li>
+                        <li >
                             <span className='flex flex-row items-center'>
                                 <svg aria-hidden="true" fill='#fff' width={'14'} height={'14'} class="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>
                                 Email: geral@eventosarena.co.ao
                             </span>
 
                             <hr className='border-b-[0.0313rem] w-full  border-white/15 ' />
-                        </ul>
+                        </li>
 
 
-                        <ul>
+                        <li>
                             <span className='flex flex-row items-center'>
                                 <svg aria-hidden="true" fill='#fff' width={'14'} height={'14'} class="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg>
                                 |
                             </span>
 
                             <hr className='border-b-[0.0313rem] w-full  border-white/15 ' />
-                        </ul>
+                        </li>
 
-                    </li>
+                    </ul>
                 </div>
 
 
