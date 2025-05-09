@@ -4,29 +4,11 @@ import Imagem1 from '../assets/image0.png';
 import Imagem2 from '../assets/image1.png';
 import Imagem3 from '../assets/image1.png';
 import Chefe1 from './chefe2.png';
+import  CarouselSpacing  from "../utlis/Carousel";
 
 export default function Carousel() {
 
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-
-    const slides = [
-        { id: 1, content: "Sabores que encantam", bgColor: "bg-blue-500", icon: Imagem1 },
-        // { id: 2, content: "Celebre com excelência", bgColor: "bg-red-500", icon: Imagem2 },
-        { id: 3, content: "Momentos que marcam", bgColor: "bg-yellow-500", icon: Imagem3 },
-    ];
-
-    const totalSlides = slides.length;
-
-    const proximoSlider = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
-    };
-
-    const preSlider = () => {
-        setCurrentIndex((prevIndex) =>
-            prevIndex === 0 ? totalSlides - 1 : prevIndex - 1
-        );
-    };
+   
 
 
 // 
@@ -58,106 +40,18 @@ const Equipe = [
   ];
   
 
-
-
-
-
-
     return (
         <>
             {/* Nossos Eventos */}
-            <div id="Eventos" className="flex flex-col mt-14 mobile:p-4 mb-0 items-center">
-
-                <div className="py-2 px-4">
-                    <h5 className="text-center  text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">
-                        Nossos Eventos
-                    </h5>
-                    <p className="text-center mobile:text-sm  xl:text-lg text-zinc-500 font-montserrat"> criando sempre experiências que deixam marcas inesquecíveis.</p>
-                </div>
-
-                {/* Contêiner do Carousel ${slide.bgColor} */}
-
-
-                
-                <div className="relative border-2 border-violet-500 overflow-hidden mobile:max-w-[76rem] xl:w-screen xl:max-w-[76rem] mobile:h-[63dvh] xl:h-[72vh] rounded-xl px-4 py-2">
-                    {/* Gradiente na borda */}
-                    <div className="absolute inset-0 rounded-xl border-0 p-[2px] ">
-                        <div className="w-full h-full  rounded-xl"></div>
-                    </div>
-
-                    {/* Conteúdo do Carousel */}
-                    <div className="relative z-10">
-                        {/* Slides */}
-                        <div
-                            className="flex transition-transform duration-500 xl:gap-x-1 mobile:gap-x-3"
-                            style={{
-                                transform: `translateX(-${currentIndex * 100}%)`,
-                            }}
-                        >
-                            {slides.map((slide, index) => (
-                                <div
-                                    key={slide.id}
-                                    className="relative flex-shrink-0 mobile:w-[100%] mobile:h-[60vh] xl:w-[100%] xl:h-[69vh] rounded-xl flex items-center justify-center text-center text-white"
-                                    style={{
-                                        backgroundImage: `url(${slide.icon?.src})`,
-                                        backgroundSize: "cover",
-                                        backgroundRepeat: "no-repeat",
-                                        backgroundPosition: "center",
-                                    }}
-                                >
-                                    {/* Overlay */}
-                                    <div className="absolute inset-0 bg-indigo-500/15 rounded-xl"></div>
-
-                                    {/* Texto */}
-                                    <article
-                                        className={`relative z-20 text-transicao ${index === currentIndex ? "activar" : ""
-                                            }`}
-                                    >
-
-                                        <h5 className="text-white mobile:text-lg xl:text-2xl font-montserrat font-bold">
-                                            {slide.content}
-
-                                        </h5>
-
-
-                                    </article>
-                                    {/* </div> */}
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-
-                {/* Botões de Navegação */}
-                <div className="flex justify-center space-x-4 mt-4">
-                    <button
-                        onClick={preSlider}
-                        className="bg-gradient-to-r from bg-gray-500 to-black  text-white px-3 py-2 rounded-4xl active:scale-95 transition-transform"
-                    >
-                        ←
-                        {/* Anterior */}
-                    </button>
-
-                    <button
-                        onClick={proximoSlider}
-                        className="bg-gradient-to-r from bg-gray-500 to-black text-white px-3 py-2 rounded-4xl active:scale-95 transition-transform"
-                    >
-                        {/* Próximo */}
-                        →
-                    </button>
-                </div>
-
-
-
-            </div>
-
+            
+<CarouselSpacing/>
 
 
 
             {/* Nossa Equipa */}
 
 
-            <div id="#" className="flex flex-col mt-8 mobile:p-4  items-center">
+            <div id="#" className="flex flex-col mt-1 mobile:p-4  items-center">
 
                 <div>
                     <h5 className="text-center  text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">
@@ -208,4 +102,104 @@ const Equipe = [
 
         </>
     );
+}
+
+
+  function meu (){
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+
+
+    const slides = [
+        { id: 1, content: "Sabores que encantam", bgColor: "bg-blue-500", icon: Imagem1 },
+        // { id: 2, content: "Celebre com excelência", bgColor: "bg-red-500", icon: Imagem2 },
+        { id: 3, content: "Momentos que marcam", bgColor: "bg-yellow-500", icon: Imagem3 },
+    ];
+
+    const totalSlides = slides.length;
+
+    const proximoSlider = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+    };
+
+    const preSlider = () => {
+        setCurrentIndex((prevIndex) =>
+            prevIndex === 0 ? totalSlides - 1 : prevIndex - 1
+        );
+    };
+
+    return(
+
+
+          <>
+        <div className="relative border-2 border-violet-500 overflow-hidden mobile:max-w-[76rem] xl:w-screen xl:max-w-[76rem] mobile:h-[63dvh] xl:h-[72vh] rounded-xl px-4 py-2">
+        {/* Gradiente na borda */}
+        <div className="absolute inset-0 rounded-xl border-0 p-[2px] ">
+            <div className="w-full h-full  rounded-xl"></div>
+        </div>
+
+        {/* Conteúdo do Carousel */}
+        <div className="relative z-10">
+            {/* Slides */}
+            <div
+                className="flex transition-transform duration-500 xl:gap-x-1 mobile:gap-x-3"
+                style={{
+                    transform: `translateX(-${currentIndex * 100}%)`,
+                }}
+            >
+                {slides.map((slide, index) => (
+                    <div
+                        key={slide.id}
+                        className="relative flex-shrink-0 mobile:w-[100%] mobile:h-[60vh] xl:w-[100%] xl:h-[69vh] rounded-xl flex items-center justify-center text-center text-white"
+                        style={{
+                            backgroundImage: `url(${slide.icon?.src})`,
+                            backgroundSize: "cover",
+                            backgroundRepeat: "no-repeat",
+                            backgroundPosition: "center",
+                        }}
+                    >
+                        {/* Overlay */}
+                        <div className="absolute inset-0 bg-indigo-500/15 rounded-xl"></div>
+
+                        {/* Texto */}
+                        <article
+                            className={`relative z-20 text-transicao ${index === currentIndex ? "activar" : ""
+                                }`}
+                        >
+
+                            <h5 className="text-white mobile:text-lg xl:text-2xl font-montserrat font-bold">
+                                {slide.content}
+
+                            </h5>
+
+
+                        </article>
+                        {/* </div> */}
+                    </div>
+                ))}
+            </div>
+        </div>
+    </div>
+
+    {/* Botões de Navegação */}
+    <div className="flex justify-center space-x-4 mt-4">
+        <button
+            onClick={preSlider}
+            className="bg-gradient-to-r from bg-gray-500 to-black  text-white px-3 py-2 rounded-4xl active:scale-95 transition-transform"
+        >
+            ←
+            {/* Anterior */}
+        </button>
+
+        <button
+            onClick={proximoSlider}
+            className="bg-gradient-to-r from bg-gray-500 to-black text-white px-3 py-2 rounded-4xl active:scale-95 transition-transform"
+        >
+            {/* Próximo */}
+            →
+        </button>
+    </div>
+
+    </>
+    )
 }
