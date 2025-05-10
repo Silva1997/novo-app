@@ -32,12 +32,13 @@ export default function RootLayout({ children }) {
         {/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> */}
         <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet" />
         <ThemeModeScript />
+        
       </head>
 
     
 
       <body
-
+className="bg-zinc-50"
       >
         <Navegador />
         {children}

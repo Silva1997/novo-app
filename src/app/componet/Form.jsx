@@ -4,7 +4,7 @@
 export const Formulario = () => {
 
     return (
-        <div className="bg-gradient-to-r from bg-[#101010] to-indigo-950 mobile:p-4 mobile:mt-[1rem] overflow-hidden xl:h-full  xl:mt-20 xl:py-4 xl:px-16">
+        <div className="bg-gradient-to-r from bg-[#101010] to-indigo-950 mobile:p-4 mobile:mt-[1rem] overflow-hidden xl:h-screen  xl:mt-20 xl:py-4 xl:px-16">
             <div id="Contactos" className="flex  items-center flex-col justify-center gap-12 ">
                 <div>
                     <h5 style={{ marginTop: '2rem' }} className="text-center text-white mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">
@@ -62,7 +62,7 @@ export const Formulario = () => {
 
 
 
-            <div className="mt-[1rem] mb-[1rem] overflow-hidden" >
+            <div className="mt-[1rem] mb-[0rem] overflow-hidden" >
 
                 <div  className="flex p-2 mobile:flex-col xl:flex-row mobile:gap-8 xl:gap-3 items-center justify-center">
                     <input type="text" placeholder="Nome" className="input input-info border-2 border-white  text-white   mobile:w-full mobile:max-w-2xl xl:w-[80rem] h-10  pl-3" />

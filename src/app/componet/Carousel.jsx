@@ -51,7 +51,7 @@ const Equipe = [
             {/* Nossa Equipa */}
 
 
-            <div id="#" className="flex flex-col mt-1 mobile:p-4  items-center">
+            <div id="#" className="flex flex-col mt-12 mobile:p-4   items-center">
 
                 <div>
                     <h5 className="text-center  text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">

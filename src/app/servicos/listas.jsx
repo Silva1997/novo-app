@@ -8,7 +8,7 @@ import icon from '../assets/image0.png';
 export default function Servicos() {
 
   return (
-    <div id='servic' className='bg-zinc-50 mobile:h-auto xl:h-[160vh] overflow-hidden' >
+    <div id='servic' className='bg-zinc-50 mobile:h-auto xl:h-[160vh] overflow-hidden mt-12' >
 
       <div className='px-4 py-2'>
 

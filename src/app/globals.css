@@ -7,6 +7,23 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
+
+@media (min-width: 20.5rem) and (max-width: 30rem) {
+  #card-personalizado{
+ 
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    background-attachment: fixed;
+  }
+}
+
+
+
+
+
+
+
+
 #fundoIndex{
   background-image: url('./assets/image0.png');
   background-size: cover;
@@ -126,18 +143,28 @@ opacity: 1; /* Torna o texto visível quando ativado */
   border-radius: 50em;
 }
 
-#card-personalizado{
+
+/* #card-personalizado{
 
   clip-path: polygon(0 0, 100% 0, 100% 76%, 0% 100%);
   background-attachment: fixed;
 
-}
+} */
 
 .card:hover {
   rotate: 7deg;
 }
 
+
+:root {
+  --clip-path:polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+  --clip-path-2: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  --color-background: var(--background);
+}
+
+
 @theme inline {
+  
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);

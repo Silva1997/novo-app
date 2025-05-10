@@ -8,7 +8,7 @@ import icon3 from './assets/valores.png'
 import icon4 from './assets/missao.png'
 import Servicos from "./servicos/listas";
 import Carousel from "./componet/Carousel";
-import PacotesCateringVertical from "./componet/Plane";
+import PacotesCateringVertical from "./componet/Card";
 import { Formulario } from "./componet/Form";
 
 
@@ -24,7 +24,7 @@ export default function Home() {
 
         {/* Fundo do do carosel */}
         <div id='fundo-imagem' >
-          <div className="absolute inset-0 z-10 bg-blue-600 opacity-50 mobile:h-[89.9vh] xl:h-[100vh] overflow-hidden"></div>
+          <div className="absolute inset-0 z-10 bg-blue-600 opacity-50 mobile:h-[100vh] xl:h-[100vh] overflow-hidden"></div>
 
           <div className="flex items-center justify-center flex-col gap-4">
             <h2 className='text-white leading-[1rem]   font-bold text-center text-3xl z-50'> EVENTOS  & <span className="text-yellow-300">CATERING</span></h2>
@@ -45,7 +45,7 @@ export default function Home() {
 
         {/* Sobre a Empresa */}
         <div id="sobre"  className="bg-zinc-50" >
-          <div id="card-personalizado" >
+          <div   className=" mobile:[clip-path:var(--clip-path-2)] xl:[clip-path:var(--clip-path)] bg-fixed" >
 
             <div id="div-margin-" className="bg-gradient-to-r from bg-[#101010] to-indigo-950 mobile:py-8 mobile:px-4  xl:px-16 gap-8 justify-center  mobile:flex mobile:flex-col mobile:h-full   flex flex-row items-center lg:h-80 " >
 
