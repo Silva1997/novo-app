@@ -3,8 +3,6 @@ import React from 'react';
 import Card from '../utlis/cardItem';
 import { FaStar } from 'react-icons/fa';
 
-import icon from '../assets/image0.png';
-
 export default function Servicos() {
 
   return (
@@ -21,23 +19,17 @@ export default function Servicos() {
       <div className="
 
     overflow-hidden
-      xl:mt-6 grid place-items-center xl:grid-rows-12 xl:grid-cols-3  xl:gap-x-8 xl:gap-y-8 xl:mx-9 xl:mr-16 xl:ml-16 mobile:p-4  text-black 
+      xl:mt-6 grid place-items-center xl:grid-rows-12 xl:grid-cols-3  xl:gap-x-6 xl:gap-y-6 xl:p-4 xl:mx-9 xl:mr-16 xl:ml-16 mobile:p-4  text-black 
       mobile:grid-cols-1 mobile:gap-x-4 mobile:gap-y-4  ">
         {
 
           Card.map((index) => (
             <div
               key={index.id}
-              className="
-               flex flex-col 
-              w-full mobile:h-[23rem] xl:h-96 rounded-xl transition 
-               hover:cursor-pointer 
-              bg-white
-               shadow-[0px_0px_8px_rgba(0,0,0,0.09)]  space-y-3 relative overflow-hidden
-              "
-            >
+              className="flex flex-col 
+              w-full mobile:h-[23rem] xl:h-96 rounded-lg border-1 hover:border-1 hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px]  space-y-3 relative overflow-hidden" >
               {/* content */}
-              <div className='mobile:h-56 xl:h-56  transition-transform ease-in xl:hover:scale-105  '
+              <div className='mobile:h-56 xl:h-56  transition-transform ease-in hover:scale-105  '
                 style={{
                   backgroundImage: `url(${index.icones?.src})`,
                   // backgroundImage: `url(${icon?.src})`,
@@ -70,12 +62,12 @@ export default function Servicos() {
                 </p>
 
                 <div className='flex  fle-row gap-4 items-stretch justify-between'>
-                <hr className='w-72 mt-4 border-[1.8] border-blue-300'/>  
-               <div className="relative flex flex-row items-center top-1 gap-2">
-               <FaStar className="text-yellow-300 text-xl" />
-                <FaStar className="text-yellow-300 text-xl" />
-                <FaStar className="text-yellow-300 text-xl" />
-               </div>
+                  <hr className='w-72 mt-4 border-[1.8] border-blue-300' />
+                  <div className="relative flex flex-row items-center top-1 gap-2">
+                    <FaStar className="text-yellow-300 text-xl hover:duration-200 hover:text-blue-500 hover:cursor-pointer hover:scale-110" />
+                    <FaStar className="text-yellow-300 text-xl hover:duration-200 hover:text-blue-500 hover:cursor-pointer hover:scale-110" />
+                    <FaStar className="text-yellow-300 text-xl hover:duration-200 hover:text-blue-500 hover:cursor-pointer hover:scale-110" />
+                  </div>
                 </div>
 
               </div>

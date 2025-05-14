@@ -109,7 +109,7 @@ export default function CarouselSize() {
       <div className='mobile:p-4 overflow-hidden' >
         <div className=' text-center  xl:py-8'>
           <h2 className='text-center text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase'>Outros Serviços</h2>
-          <p className=' mobile:text-sm xl:text-lg  text-gray-600 font-montserrat'>Oferecemos pacotes especiais para <br className='xl:hidden' /> cada tipo de evento.</p>
+          <p className=' mobile:text-sm xl:text-lg  text-gray-600 font-montserrat'>Oferecemos pacotes especiais e  personalizados <br className="xl:hidden"/> para  transformar <br className="mobile:hidden"/> seu evento  em uma experiência inesquecível.</p>
         </div>
       </div>
 

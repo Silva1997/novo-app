@@ -1,9 +1,9 @@
+
 import React, { useState } from "react";
-// import Image from "next/image";
 import Imagem1 from '../assets/image0.png';
-import Imagem2 from '../assets/image1.png';
 import Imagem3 from '../assets/image1.png';
 import Chefe1 from './chefe2.png';
+import Chefe2 from './mulher.png';
 import  CarouselSpacing  from "../utlis/Carousel";
 
 export default function Carousel() {
@@ -14,29 +14,33 @@ export default function Carousel() {
 // 
 const Equipe = [
     {
+      icon:Chefe1,
       nome: "Carlos Silva",
       cargo: "Chefe de Cozinha",
       habilidades: "Mestre na culinária angolana, especialista em pratos típicos como moamba e mufete, e liderança na cozinha.",
       experiencia: "Mais de 15 anos comandando cozinhas de prestígio e elevando sabores tradicionais com um toque contemporâneo.",
     },
     {
+      icon:Chefe2,
       nome: "Mariana Santos",
       cargo: "Garçonete",
       habilidades: "Atendimento caloroso, conhecimento das tradições gastronômicas locais e serviço ágil e eficiente.",
       experiencia: "8 anos proporcionando hospitalidade com o verdadeiro espírito angolano, garantindo que cada cliente seja unico.",
     },
     {
-      nome: "Ana Costa",
-      cargo: "Pasteleira",
-      habilidades: "Especialista em doces típicos angolanos como bolo de ginguba e cocada, além de confeitaria fina.",
-      experiencia: "12 anos aperfeiçoando receitas tradicionais e inovando na arte da confeitaria para encantar os paladares.",
-    },
-    {
+        icon:Chefe1,
         nome: "Costa Junior",
         cargo: "Bar Men",
         habilidades: "Especialista em doces típicos angolanos como bolo de ginguba e cocada, além de confeitaria fina.",
         experiencia: "12 anos aperfeiçoando receitas tradicionais e inovando na arte da confeitaria para encantar os paladares.",
       },
+       {
+      icon:Chefe2,
+      nome: "Ana Costa",
+      cargo: "Pasteleira",
+      habilidades: "Especialista em doces típicos angolanos como bolo de ginguba e cocada, além de confeitaria fina.",
+      experiencia: "12 anos aperfeiçoando receitas tradicionais e inovando na arte da confeitaria para encantar os paladares.",
+    },
   ];
   
 
@@ -44,20 +48,18 @@ const Equipe = [
         <>
             {/* Nossos Eventos */}
             
-<CarouselSpacing/>
-
-
+            <CarouselSpacing/>
 
             {/* Nossa Equipa */}
 
 
-            <div id="#" className="flex flex-col mt-12 mobile:p-4   items-center">
+            <div id="#" className="flex flex-col xl:mt-12 mobile:mt-1 mobile:p-4   items-center">
 
-                <div>
+                <div className="py-4 px-2">
                     <h5 className="text-center  text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">
                         Nossa Equipa
                     </h5>
-                    <p className="text-center mobile:text-sm  xl:text-lg text-zinc-500 font-montserrat"> Profissionais qualificados.</p>
+                    <p className="text-center mobile:text-sm  xl:text-lg text-zinc-500 font-montserrat">Profissionais apaixonados, sabores inesquecíveis excelência em <br className="mobile:hidden"/> catering para cada ocasião.</p>
                 </div>
 
                 <div className=" xl:-mt-4  xl:grid xl:h-screen mobile:items-center mobile:justify-center w-full xl:grid-cols-4 mobile:flex mobile:flex-col mobile:gap-y-4 xl:place-items-center xl:gap-4 xl:px-16">
@@ -73,25 +75,25 @@ const Equipe = [
 
                           <div
                                 style={{
-                                    backgroundImage: `url(${Chefe1?.src})`,
+                                    backgroundImage: `url(${equipe?.icon.src})`,
                           
                                     backgroundSize: "cover",
                                     backgroundRepeat: "no-repeat",
                                     backgroundPosition: "center center",
                                 }}
-                                className="relative top-0 right-6 bg-zinc-200 w-60 mobile:h-[100%] xl:h-60 z-20 rounded-tl-3xl rounded-br-3xl p-2 grayscale-100 "
+                                className="relative top-0 right-6 bg-zinc-200 w-56 mobile:h-[100%] xl:h-56 z-20 rounded-tl-3xl rounded-br-3xl p-2 grayscale-100 "
                             ></div>
 
                             {/* Fundo Secundário */}
-                            <div className="relative -top-[12.5rem] bg-amber-300 w-60 h-[100%] xl:h-60 z-10 rounded-tl-3xl rounded-br-3xl"></div>
+                            <div className="relative -top-[12.5rem] bg-amber-300 w-56 h-[100%] xl:h-56 z-10 rounded-tl-3xl rounded-br-3xl"></div>
                           </div>
 
                             {/* Conteúdo do Card */}
                             <div className="relative top-14 flex flex-col  gap-1">
-                                <h2 className=" text-start text-xl text-blue-500  font-montserrat font-bold">{equipe.nome}</h2>
-                                <p className="text-blue-500 font-semibold text-md  text-start font-montserrat">{equipe.cargo}</p>
+                                <h2 className=" text-start text-xl text-yellow-300  font-montserrat font-semibold">{equipe.nome}</h2>
+                                <p className="text-black font-semibold text-md  text-start font-montserrat">{equipe.cargo}</p>
                                 <p className="text-black  font-montserrat text-start">{equipe.habilidades}</p>
-                                <p className="text-black  font-montserrat text-start">{equipe.experiencia}</p>
+                                {/* <p className="text-black  font-montserrat text-start">{equipe.experiencia}</p> */}
                             </div>
                         </div>
                     ))}
