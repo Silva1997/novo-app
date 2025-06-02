@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import Image from "next/image";
-
 import icon5 from './assets/about.png'
 import icon3 from './assets/valores.png'
 import icon4 from './assets/missao.png'
+import Desenho from './assets/Desenho2.svg'
 import Servicos from "./servicos/listas";
 import Carousel from "./componet/Carousel";
 import PacotesCateringVertical from "./componet/Card";
@@ -22,23 +22,30 @@ export default function Home() {
       {/* Conteúdo Principal */}
       <main id="home" >
 
-        {/* Fundo do do carosel */}
-        <div id='fundo-imagem' >
+        {/* Fundo do do carosel id='fundo-imagem' */}
+      
+        <div 
+        className="grid  overflow-hidden grid-cols-1 grid-rows-[100vh] place-items-center bg-[url('../../src/app/assets/fundo1.png')] bg-cover bg-no-repeat bg-center"
+        >
+
           <div className="absolute inset-0 z-10 bg-blue-600 opacity-50 mobile:h-[100vh] xl:h-[100vh] overflow-hidden"></div>
 
-          <div className="flex items-center justify-center flex-col gap-4">
-            <h2 className='text-white leading-[1rem]   font-bold text-center text-3xl z-50'> EVENTOS  & <span className="text-yellow-300">CATERING</span></h2>
-            <p className="text-white leading-[1rem] text-center  text-xl z-50">
+          <div  className="absolute xl:top-28">
+
+            <Image  className=" mobile:hidden  relative z-30 -left-[30rem] top-28 " src={Desenho} alt="desenho" width={'80'} height={'80'}/>
+            <div className="flex items-center justify-center flex-col gap-4">
+            <h2 className='text-white leading-[1rem]   font-bold text-center mobile:text-[32px] xl:text-[2.5rem] z-50'> EVENTOS  & <span className="text-yellow-300">CATERING</span></h2>
+            <p className="text-white leading-[1rem] text-center text-2xl z-50">
               Celebramos seus momentos <br /> com execelência
             </p>
+            <Link  href="#sobre" className="py-2 px-4 animate-fade-right animate-once animate-duration-200 animate-delay-200 hover:bg-amber-300/55 hover:border-white flex flex-row items-center text-lg gap-2 justify-center text-center text-white w-32 border-2 border-white  rounded-3xl z-10">
 
-            <Link style={{ padding: '8px' }} href="#" className="animate-fade-right animate-once animate-duration-200 animate-delay-200 hover:bg-amber-300 hover:border-blue-600/80 flex flex-row items-center text-lg gap-2 justify-center text-center text-white w-32 border-2 border-white  rounded-3xl z-10">
-              Sobre
+           <p className="font-semibold">Sobre</p>
               <svg xmlns="http://www.w3.org/2000/svg" width={'24'} fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
               </svg>
-
             </Link>
+            </div>
 
           </div>
         </div>
@@ -49,7 +56,7 @@ export default function Home() {
 
             <div id="div-margin-" className="bg-gradient-to-r from bg-[#101010] to-indigo-950 mobile:py-8 mobile:px-4  xl:px-16 gap-8 justify-center  mobile:flex mobile:flex-col mobile:h-full   flex flex-row items-center lg:h-80 " >
 
-              <div className=" relative xl:-top-6" >
+              <div className=" relative xl:-top-9" >
 
                 <div  className="  xl:mb-2 flex flex-row items-center justify-start gap-1 leading-4">
                   <Image style={{ padding: '2.5px' }} placeholder="empty" className="bg-amber-300 rounded-3xl" src={icon5} alt="about" width={30} height={30} />
@@ -69,7 +76,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className=" relative xl:-top-6">
+              <div className=" relative xl:-top-9">
                 <div style={{ marginBottom: '0.75rem' }} className="flex flex-row items-center justify-start gap-1 leading-4">
                   <Image style={{ padding: '2.5px' }} placeholder="empty" className="bg-amber-300 rounded-3xl" src={icon3} alt="miss" width={30} height={30} />
                   <h6 className="text-yellow-300 text-start font-montserrat font-medium text-2xl -my-2">

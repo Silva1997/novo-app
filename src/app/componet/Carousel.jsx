@@ -62,16 +62,20 @@ const Equipe = [
                     <p className="text-center mobile:text-sm  xl:text-lg text-zinc-500 font-montserrat">Profissionais apaixonados, sabores inesquecíveis excelência em <br className="mobile:hidden"/> catering para cada ocasião.</p>
                 </div>
 
-                <div className=" xl:-mt-4  xl:grid xl:h-screen mobile:items-center mobile:justify-center w-full xl:grid-cols-4 mobile:flex mobile:flex-col mobile:gap-y-4 xl:place-items-center xl:gap-4 xl:px-16">
+                <div className=" xl:-mt-4   xl:grid xl:h-screen mobile:items-center mobile:justify-center w-full xl:grid-cols-4 mobile:flex mobile:flex-col mobile:gap-y-2 xl:place-items-center xl:gap-4 xl:px-16">
                     {Equipe.map((equipe, index) => (
                         <div
                             key={index}
-                            className="  w-80  mobile:h-[35rem] xl:h-[89%] flex flex-col items-start px-4 overflow-hidden"
+                            className=" xl:gap-8 mobile:gap-y-2   w-80  mobile:h-[31rem] xl:h-[89%] flex flex-col items-start px-4 overflow-hidden"
                         >
 
 
                            {/* Conteudo head */}
-                          <div className=" p-2 h-60 w-72">
+
+                           <div className=" bg-white h-[480px] mobile:mt-2 rounded-xl">
+
+
+                         <div className=" p-2 h-60 w-72">
 
                           <div
                                 style={{
@@ -81,20 +85,28 @@ const Equipe = [
                                     backgroundRepeat: "no-repeat",
                                     backgroundPosition: "center center",
                                 }}
-                                className="relative top-0 right-6 bg-zinc-200 w-56 mobile:h-[100%] xl:h-56 z-20 rounded-tl-3xl rounded-br-3xl p-2 grayscale-100 "
-                            ></div>
+                                className="relative top-2 -right-2 bg-zinc-100 w-56 mobile:h-[100%] xl:h-56 z-20 rounded-tl-3xl rounded-br-3xl p-2 grayscale-0 "
+                            >
+                            </div>
 
                             {/* Fundo Secundário */}
-                            <div className="relative -top-[12.5rem] bg-amber-300 w-56 h-[100%] xl:h-56 z-10 rounded-tl-3xl rounded-br-3xl"></div>
+                            <div className="relative -top-[12rem] left-8 bg-amber-300 w-56 h-[100%] xl:h-56 z-10 rounded-tl-3xl rounded-br-3xl"></div>
                           </div>
 
                             {/* Conteúdo do Card */}
-                            <div className="relative top-14 flex flex-col  gap-1">
+                            <div className="relative top-14 flex flex-col  gap-1 py-2 px-4">
                                 <h2 className=" text-start text-xl text-yellow-300  font-montserrat font-semibold">{equipe.nome}</h2>
-                                <p className="text-black font-semibold text-md  text-start font-montserrat">{equipe.cargo}</p>
-                                <p className="text-black  font-montserrat text-start">{equipe.habilidades}</p>
+                                <p className="text-black font-medium text-md  text-start font-montserrat">{equipe.cargo}</p>
+                                <p className="text-zinc-400  font-montserrat text-start">{equipe.habilidades}</p>
                                 {/* <p className="text-black  font-montserrat text-start">{equipe.experiencia}</p> */}
                             </div>
+                       
+
+
+                           </div>
+                         
+                       
+                       
                         </div>
                     ))}
                 </div>

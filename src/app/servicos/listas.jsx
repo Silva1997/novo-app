@@ -12,7 +12,7 @@ export default function Servicos() {
 
         <h2 className="   text-center mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">Nossos Serviços</h2>
         <p className=' text-center mobile:text-sm xl:text-lg  text-gray-600 font-montserrat'>
-          Somos a sua escolha premium para <br className='xl:hidden' /> transformar os  seus eventos  em experiências <br /> verdadeiramente memoráveis.
+          Somos a sua escolha premium para  transformar os  seus eventos  em experiências.
         </p>
       </div>
 
@@ -29,8 +29,9 @@ export default function Servicos() {
               className="flex flex-col 
               w-full mobile:h-[23rem] xl:h-96 rounded-lg border-1 hover:border-1 hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px]  space-y-3 relative overflow-hidden" >
               {/* content */}
-              <div className='mobile:h-56 xl:h-56  transition-transform ease-in hover:scale-105  '
-                style={{
+              <div className='mobile:h-56 xl:h-56 transition-transform ease-in hover:scale-105  '
+              
+              style={{
                   backgroundImage: `url(${index.icones?.src})`,
                   // backgroundImage: `url(${icon?.src})`,
                   backgroundSize: "cover",
@@ -38,7 +39,9 @@ export default function Servicos() {
                   backgroundPosition: "center bottom",
 
                 }}
+
               >
+              {/* Content-header */}
 
                 <div className="mobile:w-16 mobile:h-16 xl:w-16 xl:h-16  bg-yellow-300 rounded-full absolute mobile:-right-4 xl:-right-3 mobile:-top-4 xl:-top-5">
 
@@ -54,8 +57,8 @@ export default function Servicos() {
 
 
               </div>
-              {/* contentsub */}
-              <div className="py-4 px-2 relative mobile:-top-2 leading-1 h-fit ">
+              {/* content-body */}
+              <div className="py-4 px-4 relative mobile:-top-2 leading-1 h-fit ">
 
                 <p className=" text-md  tracking-tight text-start text-zinc-500 leading-6 font-montserrat ">
                   {index.desc}

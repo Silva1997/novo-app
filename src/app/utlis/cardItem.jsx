@@ -72,7 +72,7 @@ const Card = [
   },
   {
     id: 3,
-    icon: (<Image style={{ fill: "#b7c2da", marginLeft: '12px' }} width={'32'} height={'20'} src={icon6} />),
+    icon: (<Image style={{ fill: "#b7c2da", marginLeft: '12px' }} width={'32'} height={'20'} src={icon6}  alt='icon-aniversario'/>),
     title: "Aniversários Memoráveis",
     icones: icon2,
     desc: "Celebração em grande estilo! Decoração personalizada e catering sofisticado para momentos inesquecíveis.",

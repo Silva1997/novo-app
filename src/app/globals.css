@@ -77,7 +77,9 @@ color: black;
 transform: translateX(0);
 opacity: 1; /* Torna o texto visível quando ativado */
 }
-#fundo-imagem{
+
+
+/* #fundo-imagem{
 
   display: grid;
   overflow: hidden;
@@ -89,7 +91,7 @@ opacity: 1; /* Torna o texto visível quando ativado */
   background-repeat: no-repeat;
   background-size: cover;
 
-}
+} */
 
 .card {
   width: 350px;
@@ -216,7 +218,7 @@ opacity: 1; /* Torna o texto visível quando ativado */
       box-sizing: border-box;
       scroll-behavior: smooth;
 
-      scroll-padding-top: 4rem; 
+      scroll-padding-top: 8rem; 
   }
 
   /* For Firefox. */
