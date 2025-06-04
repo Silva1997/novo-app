@@ -53,7 +53,7 @@ const Equipe = [
             {/* Nossa Equipa */}
 
 
-            <div id="#" className="flex flex-col xl:mt-12 mobile:mt-1 mobile:p-4   items-center">
+            <div id="#" className="flex flex-col xl:mt-9  mobile:mt-1 mobile:p-4 items-center">
 
                 <div className="py-4 px-2">
                     <h5 className="text-center  text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">

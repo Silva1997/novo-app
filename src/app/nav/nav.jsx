@@ -133,8 +133,8 @@ export default function Navegador() {
 
                        key={index}>
 
-                      <a className='flex flex-row gap-2  text-xl  hover:cursor-pointer hover:text-black hover:border-b-2 hover:border-yellow-300' href={item.href}>
-                        <span className='text-yellow-300'> {index+1}.  <p>{item.title}</p></span>
+                      <a className='text-xl  hover:cursor-pointer hover:text-black hover:border-b-2 hover:border-yellow-300' href={item.href}>
+                        <span className='text-yellow-300 flex flex-row gap-2 '> {index+1}.  <p className='text-black'>{item.title}</p> </span>
                         
                         </a>
                       

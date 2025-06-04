@@ -6,7 +6,7 @@ import { FaStar } from 'react-icons/fa';
 export default function Servicos() {
 
   return (
-    <div id='servic' className='bg-zinc-50 mobile:h-auto xl:h-[160vh] overflow-hidden mt-12' >
+    <div id='servic' className='bg-zinc-50 mobile:h-auto xl:h-[150vh] overflow-hidden mt-12' >
 
       <div className='px-4 py-2'>
 
@@ -17,23 +17,21 @@ export default function Servicos() {
       </div>
 
       <div className="
-
-    overflow-hidden
-      xl:mt-6 grid place-items-center xl:grid-rows-12 xl:grid-cols-3  xl:gap-x-6 xl:gap-y-6 xl:p-4 xl:mx-9 xl:mr-16 xl:ml-16 mobile:p-4  text-black 
-      mobile:grid-cols-1 mobile:gap-x-4 mobile:gap-y-4  ">
+      overflow-hidden xl:mt-2
+      grid place-items-center xl:grid-rows-12 xl:grid-cols-3  xl:gap-x-6 xl:gap-y-6 xl:p-4  xl:m-16 mobile:px-7 mobile:py-4 text-black 
+      mobile:grid-cols-1 mobile:gap-x-4 mobile:gap-y-4">
         {
 
           Card.map((index) => (
             <div
               key={index.id}
               className="flex flex-col 
-              w-full mobile:h-[23rem] xl:h-96 rounded-lg border-1 hover:border-1 hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px]  space-y-3 relative overflow-hidden" >
+              w-full mobile:h-[24rem] xl:h-96 rounded-lg border-1 hover:border-1 hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px]  space-y-3 relative overflow-hidden" >
               {/* content */}
-              <div className='mobile:h-56 xl:h-56 transition-transform ease-in hover:scale-105  '
+              <div className='mobile:h-60 bg-transparent w-full xl:h-56 transition-transform ease-in hover:scale-105  '
               
               style={{
                   backgroundImage: `url(${index.icones?.src})`,
-                  // backgroundImage: `url(${icon?.src})`,
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   backgroundPosition: "center bottom",

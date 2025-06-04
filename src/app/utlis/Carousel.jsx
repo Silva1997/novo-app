@@ -43,24 +43,24 @@ export default function CarouselSpacing() {
 
   return (
     <>
-      <div id="Eventos" className="flex flex-col mt-12 mobile:p-4  items-center">
+      <div id="Eventos" className="flex flex-col mobile:mt-1 xl:mt-9 mobile:py-2  items-center">
         <div className="py-4 px-2">
           <h5 className="text-center text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase">
             Nossos Eventos
           </h5>
           <p className="text-center mobile:text-sm xl:text-lg text-zinc-500 font-montserrat">
-            Criando experiências únicas que deixam marcas inesquecíveis,<br className="mobile:hidden" /> com excelência, dedicação  em cada detalhe.
+            Criando experiências únicas que deixam marcas inesquecíveis, com excelência.
           </p>
         </div>
       </div>
 
-      <div className=" mobile:px-2 mobile:py-1 mobile:h-[25rem] sm:h-64 xl:h-[28rem] 2xl:h-96 grid grid-cols-1 gap-4 place-items-center overflow-hidden">
+      <div className=" mobile:px-7 mobile:py-1 mobile:h-[25rem] sm:h-64 xl:h-[28rem] 2xl:h-96 grid grid-cols-1 gap-4 place-items-center overflow-hidden">
         <Carousel
 
           plugins={[plugin.current]}
           onMouseEnter={plugin.current.stop}
           onMouseLeave={plugin.current.reset}
-          className="w-full xl:py-2 mobile:w-[100%] mobile:h-96 xl:max-w-6xl   xl:h-[100%]">
+          className="w-full xl:py-2 mobile:w-[100%] mobile:h-[24rem] xl:max-w-6xl   xl:h-[100%]">
           <CarouselContent className="-ml-1"
 
           >
@@ -76,7 +76,7 @@ export default function CarouselSpacing() {
                 <div className="xl:p-2  mobile:px-2">
                   <Card
                     style={{ backgroundImage: `url(${img.icon?.src})` }}
-                    className={`  hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px] mobile:h-96 xl:h-full  w-[100%] bg-no-repeat bg-cover bg-center rounded-lg border-0  overflow-hidden`}
+                    className={`  hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px] mobile:h-96 xl:h-full  w-[100%] bg-no-repeat bg-cover bg-center rounded-md border-0  overflow-hidden`}
                   >
 
                     <CardContent className="flex aspect-square items-center justify-center p-6">
