@@ -7,7 +7,7 @@ import icon3 from './assets/valores.png'
 import icon4 from './assets/missao.png'
 import Desenho from './assets/Desenho2.svg'
 import Servicos from "./servicos/listas";
-import Carousel from "./componet/Carousel";
+import CarouselDApiDemo from "./componet/Cardapi";
 import PacotesCateringVertical from "./componet/Card";
 import { Formulario } from "./componet/Form";
 
@@ -33,12 +33,12 @@ export default function Home() {
           <div  className="absolute xl:top-28">
 
             <Image  className=" mobile:hidden  relative z-30 -left-[30rem] top-28 " src={Desenho} alt="desenho" width={'80'} height={'80'}/>
-            <div className="flex items-center justify-center flex-col gap-4">
+            <div className="flex items-center justify-center flex-col gap-y-6">
             <h2 className='text-white leading-[1rem]   font-bold text-center mobile:text-[32px] xl:text-[2.5rem] z-50'> EVENTOS  & <span className="text-yellow-300">CATERING</span></h2>
             <p className="text-white leading-[1rem] text-center text-2xl z-50">
               Celebramos seus momentos <br /> com execelência
             </p>
-            <Link  href="#sobre" className="py-2 px-4 animate-fade-right animate-once animate-duration-200 animate-delay-200 hover:bg-amber-300/55 hover:border-white flex flex-row items-center text-lg gap-2 justify-center text-center text-white w-32 border-2 border-white  rounded-3xl z-10">
+            <Link  href="#sobre" className=" mt-1 py-2 px-4 animate-fade-right animate-once animate-duration-200 animate-delay-200 hover:bg-amber-300/55 hover:border-white flex flex-row items-center text-lg gap-2 justify-center text-center text-white w-32 border-2 border-white  rounded-3xl z-10">
 
            <p className="font-semibold">Sobre</p>
               <svg xmlns="http://www.w3.org/2000/svg" width={'24'} fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -119,7 +119,8 @@ export default function Home() {
         {/*  */}
         <Formulario/>
         {/*  */}
-        <Carousel />
+        {/* <Carousel /> */}
+        <CarouselDApiDemo />
       </main>
     </>
   );

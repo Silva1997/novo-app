@@ -5,9 +5,9 @@ export const Formulario = () => {
 
     return (
         <div className="bg-gradient-to-r from bg-[#101010] to-indigo-950 mobile:px-7 mobile:py-4 mobile:mt-[2rem] overflow-hidden xl:h-screen  xl:mt-20 xl:py-4 xl:px-16">
-            <div id="Contactos" className="flex  items-center flex-col justify-center gap-11 ">
+            <div id="Contactos" className="flex  items-center flex-col justify-center gap-y-8 ">
                 <div>
-                    <h5 style={{ marginTop: '2rem' }} className="text-center text-white mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">
+                    <h5 style={{ marginTop: '3rem' }} className="text-center text-white mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">
                         Contactos
 
                     </h5>
@@ -72,7 +72,7 @@ export const Formulario = () => {
                     <input type="number" maxLength={8} max={8} placeholder="Contacto" className=" input input-info border-2 border-white  text-white  mobile:w-full mobile:max-w-2xl xl:w-[80rem] h-10  pl-3" />
                 </div>
 
-                <div className="flex mt-14 flex-col gap-8 items-center justify-center gap-y-4 mobile:px-1">
+                <div className="flex mt-8  flex-col gap-8 items-center justify-center gap-y-4 mobile:px-1">
                     <textarea placeholder="Mensagem" className=" textarea-info textarea border-2 border-white text-white mobile:w-full mobile:max-w-2xl xl:w-[76rem] h-36  xl:pl-3" />
                     <button className=" cursor-pointer text-center text-lg text-white w-44 h-11 bg-amber-300 rounded-2xl ">Enviar</button>
                 </div>

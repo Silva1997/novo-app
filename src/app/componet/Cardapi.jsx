@@ -20,7 +20,7 @@ import imagem2 from "../utlis/Galaeria/A2.png";
 import imagem3 from "../utlis/Galaeria/A3.png";
 
 
-export function CarouselDApiDemo() {
+export default function CarouselDApiDemo() {
   const [api, setApi] = React.useState()
   const [current, setCurrent] = React.useState(0)
   const [count, setCount] = React.useState(0)
@@ -28,12 +28,9 @@ export function CarouselDApiDemo() {
 
 
    const Imagem = [
-      { id: 1, icon: imagem1,text:'   Sabores que encantam' },
-      { id: 2, icon: imagem2,text:'   Sabores que  voce ama' },
+      { id: 1, icon: imagem1,text:'Sabores que encantam' },
+      { id: 2, icon: imagem2,text:'Sabores que  voce ama' },
       { id: 3, icon: imagem3,text:'Perfeito para voce' },
-      {id:4, icon:imagem2,text:'Com carinho e amor'},
-       { id: 5, icon: imagem3,text:'Perfeito para voce' },
-      {id:6, icon:imagem2,text:'Com carinho e amor'},
   
     ]
   
@@ -66,11 +63,11 @@ export function CarouselDApiDemo() {
       </div>
       
 
-        <div className=" max-a mobile:px-7 mobile:py-1 mobile:h-[25rem] sm:h-64 xl:h-[28rem] 2xl:h-96 grid grid-cols-1 gap-4 place-items-center overflow-hidden">
+        <div className=" max-a mobile:px-7 mobile:py-1 mobile:h-[25rem] sm:h-64 xl:h-[34.5rem] 2xl:h-96 grid grid-cols-1 gap-4 place-items-center overflow-hidden">
 
       <Carousel setApi={setApi} 
       
-          className="w-full xl:py-2 mobile:w-[100%] mobile:h-[24rem] xl:max-w-6xl   xl:h-[100%]">
+          className="w-full xl:py-2 mobile:w-[100%] mobile:h-[24rem] xl:max-w-[60rem]   xl:h-[100%]">
 
 
      <CarouselContent className="-ml-1"
@@ -80,19 +77,19 @@ export function CarouselDApiDemo() {
               <CarouselItem
                
                 key={index}
-                className="pl-1 mobile:flex mobile:flex-col md:basis-1/2 lg:basis-1/3"
+                className="pl-1 mobile:flex mobile:flex-col md:basis-1/2 lg:basis-1/2"
               >
                 <div className="xl:p-2  mobile:px-2">
                   <Card
                     style={{ backgroundImage: `url(${img.icon?.src})` }}
-                    className={`  hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px] mobile:h-96 xl:h-full  w-[100%] bg-no-repeat bg-cover bg-center rounded-md border-0  overflow-hidden`}
+                    className={` grayscale-[10px] hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px] mobile:h-96 xl:h-full  w-[100%] bg-no-repeat bg-cover bg-center rounded-none border-0  overflow-hidden`}
                   >
 
                     <CardContent className="flex aspect-square items-center justify-center p-6">
                  
                       <p
                       
-                      className={`relative z-20 text-2xl text-white text-transicao ${
+                      className={`relative z-20 text-3xl font-montserrat font-semibold text-yellow-300 text-transicao ${
                         index + 1 === current ? "activar" : "text-nulo"
                       }`}
                    
@@ -107,26 +104,11 @@ export function CarouselDApiDemo() {
           </CarouselContent>
 
 
-{/*         
-        <CarouselContent className={'pl-1 mobile:flex mobile:flex-col md:basis-1/2 lg:basis-1/3'}>
-          {Array.from({ length: 5 }).map((_, index) => (
-            <CarouselItem key={index}>
-              <Card>
-                <CardContent className="flex aspect-square items-center justify-center p-6">
-                  <span className="text-4xl font-semibold">{index + 1}</span>
-                </CardContent>
-              </Card>
-            </CarouselItem>
-          ))}
-        </CarouselContent> */}
-
-
-
         <CarouselPrevious className='mobile:hidden' />
         <CarouselNext className='mobile:hidden' />
       </Carousel>
       <div className="text-muted-foreground py-2 text-center text-sm">
-        Slide {current} of {count}
+        Inicio {current} de {count}
       </div>
     </div>
     </>

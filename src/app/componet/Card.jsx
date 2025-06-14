@@ -127,13 +127,13 @@ export default function CarouselSize() {
         opts={{
           align: "center",
         }}
-        className={'w-full max-w-6xl xl:px-4 mobile:px-7'}
+        className={'w-full max-w-[70.3rem] xl:px-4 mobile:px-7'}
       >
         <CarouselContent>
           {pacotes.map((pacote, index) => (
             <CarouselItem key={pacote.id} className=" mobile:basis-1/1 md:basis-1/2 lg:basis-1/4 gap-1">
               <div className="py-2 px-1">
-                <Card className={`    rounded-lg border-0 hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px]  ${pacotes.findIndex(p => p.id === pacote.id) === 5 ? ' bg-gradient-to-r from bg-orange-400 to-yellow-300 mobile:h-[24rem] xl:h-96 w-[100%] text-white' : ' mobile:h-[24rem] xl:h-96 w-full bg-gradient-to-l from bg-white to-zinc-50 '}`}>
+                <Card className={`rounded-none border-0 hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px]  ${pacotes.findIndex(p => p.id === pacote.id) === 5 ? ' bg-gradient-to-r from bg-orange-400 to-yellow-300 mobile:h-[24rem] xl:h-96 w-[100%] text-white' : ' mobile:h-[24rem] xl:h-96 w-full bg-gradient-to-l from bg-white to-zinc-50 '}`}>
                   <CardContent className="p-6">
                     <article className="flex flex-col items-center py-0 justify-center">
                       {/* Imagem card */}

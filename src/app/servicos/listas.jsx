@@ -26,7 +26,7 @@ export default function Servicos() {
             <div
               key={index.id}
               className="flex flex-col 
-              w-full mobile:h-[24rem] xl:h-96 rounded-lg border-1 hover:border-1 hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px]  space-y-3 relative overflow-hidden" >
+              w-full mobile:h-[24rem] xl:h-96  border-1 hover:border-1 hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px]  space-y-3 relative overflow-hidden" >
               {/* content */}
               <div className='mobile:h-60 bg-transparent w-full xl:h-56 transition-transform ease-in hover:scale-105  '
               
