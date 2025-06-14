@@ -5,6 +5,7 @@ import Imagem3 from '../assets/image1.png';
 import Chefe1 from './chefe2.png';
 import Chefe2 from './mulher.png';
 import  CarouselSpacing  from "../utlis/Carousel";
+import { CarouselDApiDemo } from "./Cardapi";
 
 export default function Carousel() {
 
@@ -48,7 +49,8 @@ const Equipe = [
         <>
             {/* Nossos Eventos */}
             
-            <CarouselSpacing/>
+            <CarouselDApiDemo/>
+                {/* <CarouselSpacing/> */}
 
             {/* Nossa Equipa */}
 
