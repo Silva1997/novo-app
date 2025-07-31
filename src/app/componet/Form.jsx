@@ -4,18 +4,18 @@
 export const Formulario = () => {
 
     return (
-        <div className="bg-gradient-to-r from bg-[#101010] to-indigo-950 mobile:px-7 mobile:py-4 mobile:mt-[2rem] overflow-hidden xl:h-screen  xl:mt-20 xl:py-4 xl:px-16">
+        <div className="bg-gradient-to-r from bg-[#101010] to-indigo-950 mobile:px-7 md:px-8 mobile:py-4 mobile:mt-[2rem] overflow-hidden xl:h-screen  xl:mt-20 xl:py-4 xl:px-16">
             <div id="Contactos" className="flex  items-center flex-col justify-center gap-y-8 ">
                 <div>
-                    <h5 style={{ marginTop: '3rem' }} className="text-center text-white mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase ">
+                    <h5 style={{ marginTop: '3rem' }} className="text-center text-white mobile:text-2xl md:text-3xl xl:text-3xl font-montserrat font-[500] uppercase ">
                         Contactos
 
                     </h5>
-                    <p className="text-center mobile:text-lg xl:text-xl text-zinc-500 font-montserrat">Envia-nos uma mensagem, e vamos juntos construir o futuro</p>
+                    <p className="text-center mobile:text-lg xl:text-xl md:text-md text-zinc-500 font-montserrat">Envia-nos uma mensagem, e vamos juntos construir o futuro</p>
                 </div>
 
 
-                <div className="flex mobile:flex-col  xl:flex-row mobile:gap-10 xl:gap-56">
+                <div className="flex mobile:flex-col  xl:flex-row mobile:gap-10 xl:gap-56 md:gap-10">
                     <div className="flex items-center gap-2 flex-col" >
                         <div >
                             <svg id='items-color' fill="#faca15" aria-hidden="true" width={'25'} class="e-font-icon-svg e-fas-location-arrow" viewBox="0 0 512 512"
@@ -66,14 +66,14 @@ export const Formulario = () => {
 
             <div className="mt-[1rem] mb-[0rem] overflow-hidden" >
 
-                <div  className="flex p-2 mobile:flex-col xl:flex-row mobile:gap-8 xl:gap-3 items-center justify-center">
-                    <input type="text" placeholder="Nome" className="input input-info border-2 border-white  text-white   mobile:w-full mobile:max-w-2xl xl:w-[80rem] h-10  pl-3" />
-                    <input type="text" placeholder="Email" className=" input input-info border-2 border-white  text-white  mobile:w-full mobile:max-w-2xl xl:w-[80rem] h-10  pl-3" />
-                    <input type="number" maxLength={8} max={8} placeholder="Contacto" className=" input input-info border-2 border-white  text-white  mobile:w-full mobile:max-w-2xl xl:w-[80rem] h-10  pl-3" />
+                <div  className="flex p-2 mobile:flex-col xl:flex-row mobile:gap-8 xl:gap-3 md:gap-3 items-center justify-center">
+                    <input type="text" placeholder="Nome" className="input input-info border-2 border-white  text-white   mobile:w-full mobile:max-w-2xl xl:w-[80rem] md:w-[17rem] h-10  pl-3" />
+                    <input type="text" placeholder="Email" className=" input input-info border-2 border-white  text-white  mobile:w-full mobile:max-w-2xl xl:w-[80rem] md:w-[17rem] h-10  pl-3" />
+                    <input type="number" maxLength={8} max={8} placeholder="Contacto" className=" input input-info border-2 border-white  text-white  mobile:w-full mobile:max-w-2xl xl:w-[80rem] md:w-[17rem] h-10  pl-3" />
                 </div>
 
-                <div className="flex mt-8  flex-col gap-8 items-center justify-center gap-y-4 mobile:px-1">
-                    <textarea placeholder="Mensagem" className=" textarea-info textarea border-2 border-white text-white mobile:w-full mobile:max-w-2xl xl:w-[76rem] h-36  xl:pl-3" />
+                <div className="flex mt-8  flex-col gap-8 items-center justify-center gap-y-4 mobile:px-1 md:mb-12">
+                    <textarea placeholder="Mensagem" className=" textarea-info textarea border-2 border-white text-white mobile:w-full mobile:max-w-2xl md:w-[43rem] xl:w-[76rem] h-36  xl:pl-3" />
                     <button className=" cursor-pointer text-center text-lg text-white w-44 h-11 bg-amber-300 rounded-2xl ">Enviar</button>
                 </div>
 

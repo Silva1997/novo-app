@@ -39,7 +39,7 @@ export default function Navegador() {
             <nav
 
                 style={{ padding: "0.75rem" }}
-                className="flex  md:bg-red-500  bg-white  fixed top-0 w-full h-16 z-100 overflow-hidden items-center justify-between  mobile:justify-end"
+                className="flex  md:bg-red-500 sm:bg-amber-700 lg:bg-violet-500 mobile:bg-white xl:bg-white  fixed top-0 w-full h-16 z-100 overflow-hidden items-center justify-between  mobile:justify-end"
             >
                  
 
@@ -73,7 +73,7 @@ export default function Navegador() {
 {/* Desktop */}
                 <div className="flex flex-row items-center  w-full   p-1 overflow-hidden   gap-6 justify-end mobile:hidden">
 
-                    <section className='  cursor-pointer w-32  overflow-hidden flex flex-row gap-x-1  items-center relative md:right-32 xl:right-[38.7rem]'>
+                    <section className='  cursor-pointer w-32  overflow-hidden flex flex-row gap-x-1  items-center relative md:right-22  xl:right-[39.5rem]'>
                         
                         {/* <Image className='p-0.5' src={Icon} alt='icon logotipo' width={'57'} height={'53'} /> */}
                         <div className='flex flex-col justify-end gap-0 m-0 p-0'>
@@ -91,7 +91,7 @@ export default function Navegador() {
                     {
                         items.map((item, index) => (
                             <li key={index} className="no-underline list-none">
-                                <a className=" flex-wrap list-none no-underline font-montserrat nav-item relative right-16 font-semibold text-black/55 hover:cursor-pointer hover:text-black hover:border-b-2 hover:border-yellow-300"
+                                <a className=" flex-wrap list-none no-underline font-montserrat nav-item relative xl:right-16 md:right-4 font-semibold text-black/55 hover:cursor-pointer hover:text-black hover:border-b-2 hover:border-yellow-300"
                                     href={item.href}>     <span className="text-yellow-300 hover:border-none border-0">{index + 1}. </span>
                                     {item.title}</a></li>
                         ))

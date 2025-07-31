@@ -110,13 +110,13 @@ export default function CarouselSize() {
 
 
 
-    <div className="grid grid-cols-1 place-items-center mt-0">
+    <div className="grid grid-cols-1 place-items-center mt-0 md:mb-12">
 
 
-      <div className='mobile:p-4 overflow-hidden' >
-        <div className=' text-center  xl:py-7'>
-          <h2 className='text-center text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase'>Outros Serviços</h2>
-          <p className=' mobile:text-sm xl:text-lg  text-gray-600 font-montserrat'>Oferecemos pacotes especiais e  personalizados <br className="xl:hidden" /> para  transformar seu evento.</p>
+      <div className='mobile:p-4 md:py-9 overflow-hidden' >
+        <div className=' text-center  xl:p-0'>
+          <h2 className='text-center text-black mobile:text-2xl md:text-3xl xl:text-3xl font-montserrat font-[500] uppercase'>Outros Serviços</h2>
+          <p className=' mobile:text-sm md:text-md xl:text-lg  text-gray-600 font-montserrat'>Oferecemos pacotes especiais e  personalizados <br className="xl:hidden" /> para  transformar seu evento.</p>
         </div>
       </div>
 
@@ -127,11 +127,11 @@ export default function CarouselSize() {
         opts={{
           align: "center",
         }}
-        className={'w-full max-w-[70.3rem] xl:px-4 mobile:px-7'}
+        className={'w-full max-w-[78rem]  xl:px-4 mobile:px-7 md:px-8'}
       >
         <CarouselContent>
           {pacotes.map((pacote, index) => (
-            <CarouselItem key={pacote.id} className=" mobile:basis-1/1 md:basis-1/2 lg:basis-1/4 gap-1">
+            <CarouselItem key={pacote.id} className=" mobile:basis-1/1 md:basis-1/3 lg:basis-1/4 gap-1">
               <div className="py-2 px-1">
                 <Card className={`rounded-none border-0 hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px]  ${pacotes.findIndex(p => p.id === pacote.id) === 5 ? ' bg-gradient-to-r from bg-orange-400 to-yellow-300 mobile:h-[24rem] xl:h-96 w-[100%] text-white' : ' mobile:h-[24rem] xl:h-96 w-full bg-gradient-to-l from bg-white to-zinc-50 '}`}>
                   <CardContent className="p-6">
@@ -169,8 +169,8 @@ export default function CarouselSize() {
           ))}
 
         </CarouselContent>
-        <CarouselPrevious className={'mobile:hidden'} />
-        <CarouselNext className={'mobile:hidden'} />
+        <CarouselPrevious className={'mobile:hidden  md:hidden'} />
+        <CarouselNext className={'mobile:hidden md:hidden'} />
       </Carousel>
 
 

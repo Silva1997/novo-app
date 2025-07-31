@@ -51,23 +51,23 @@ export default function CarouselDApiDemo() {
   return (
 
     <>
-     <div id="Eventos" className="flex flex-col mobile:mt-1 xl:mt-9 mobile:py-2  items-center">
+     <div id="Eventos" className="flex flex-col md:mt-4 mobile:mt-1 xl:mt-9 mobile:py-2  items-center">
         <div className="py-4 px-2">
-          <h5 className="text-center text-black mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase">
+          <h5 className="text-center text-black md:text-3xl mobile:text-2xl xl:text-3xl font-montserrat font-[500] uppercase">
             Nossos Eventos
           </h5>
-          <p className="text-center mobile:text-sm xl:text-lg text-zinc-500 font-montserrat">
+          <p className="text-center md:text-md mobile:text-sm xl:text-lg text-zinc-500 font-montserrat">
             Criando experiências únicas que deixam marcas inesquecíveis, com excelência.
           </p>
         </div>
       </div>
       
 
-        <div className=" max-a mobile:px-7 mobile:py-1 mobile:h-[25rem] sm:h-64 xl:h-[34.5rem] 2xl:h-96 grid grid-cols-1 gap-4 place-items-center overflow-hidden">
+        <div className=" max-a mobile:px-7 mobile:py-1 md:px-8 md:-mt-4 mobile:h-[25rem] md:h-[30rem] sm:h-64 xl:h-[34.5rem] 2xl:h-96 grid grid-cols-1 gap-4 place-items-center overflow-hidden">
 
       <Carousel setApi={setApi} 
       
-          className="w-full xl:py-2 mobile:w-[100%] mobile:h-[24rem] xl:max-w-[60rem]   xl:h-[100%]">
+          className="w-full xl:py-2 mobile:w-[100%]  md:h-[28rem]  mobile:h-[24rem] xl:max-w-[60rem]   xl:h-[100%]">
 
 
      <CarouselContent className="-ml-1"
@@ -77,12 +77,12 @@ export default function CarouselDApiDemo() {
               <CarouselItem
                
                 key={index}
-                className="pl-1 mobile:flex mobile:flex-col md:basis-1/2 lg:basis-1/2"
+                className="pl-1 mobile:flex mobile:flex-col md:basis-1/2 lg:basis-1/2 "
               >
-                <div className="xl:p-2  mobile:px-2">
+                <div className="xl:p-2 md:px-1 md:py-2  mobile:px-2">
                   <Card
                     style={{ backgroundImage: `url(${img.icon?.src})` }}
-                    className={` grayscale-[10px] hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px] mobile:h-96 xl:h-full  w-[100%] bg-no-repeat bg-cover bg-center rounded-none border-0  overflow-hidden`}
+                    className={` grayscale-[10px] hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px] md:h-[27rem] mobile:h-96 xl:h-full  w-[100%] bg-no-repeat bg-cover bg-center rounded-none border-0  overflow-hidden`} 
                   >
 
                     <CardContent className="flex aspect-square items-center justify-center p-6">
@@ -104,12 +104,12 @@ export default function CarouselDApiDemo() {
           </CarouselContent>
 
 
-        <CarouselPrevious className='mobile:hidden' />
-        <CarouselNext className='mobile:hidden' />
+        <CarouselPrevious className='mobile:hidden md:hidden' />
+        <CarouselNext className='mobile:hidden md:hidden' />
       </Carousel>
-      <div className="text-muted-foreground py-2 text-center text-sm">
+      {/* <div className="text-muted-foreground py-2 text-center text-sm">
         Inicio {current} de {count}
-      </div>
+      </div> */}
     </div>
     </>
     
