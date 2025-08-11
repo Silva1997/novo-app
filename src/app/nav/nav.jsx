@@ -71,9 +71,9 @@ export default function Navegador() {
 
 
 {/* Desktop */}
-                <div className="flex flex-row items-center  w-full   p-1 overflow-hidden   gap-6 justify-end mobile:hidden">
+                <div className="flex flex-row items-center  w-full   p-1 overflow-hidden   gap-6 md:justify-around xl:justify-end-safe mobile:hidden">
 
-                    <section className='  cursor-pointer w-32  overflow-hidden flex flex-row gap-x-1  items-center relative md:right-44  xl:right-[39.5rem]'>
+                    <section className='  cursor-pointer w-32  overflow-hidden flex flex-row gap-x-1  items-center relative md:justify-start  xl:right-[39.5rem]'>
                         
                         {/* <Image className='p-0.5' src={Icon} alt='icon logotipo' width={'57'} height={'53'} /> */}
                         <div className='flex flex-col justify-end gap-0 m-0 p-0'>
@@ -88,14 +88,17 @@ export default function Navegador() {
                     </section>
 
 
-                    {
+                   {/* <div className='flex flex-row justify-between items-center gap-5'> */}
+                    {/* Item do navegador */}
+                     {
                         items.map((item, index) => (
                             <li key={index} className="no-underline list-none">
-                                <a className=" flex-wrap list-none no-underline font-montserrat nav-item relative xl:right-16 md:right-5 font-semibold text-black/55 hover:cursor-pointer hover:text-black hover:border-b-2 hover:border-yellow-300"
+                                <a className=" flex-wrap md:gap-x-3 list-none no-underline font-montserrat nav-item relative xl:right-16 md:right-5  font-semibold text-black/55 hover:cursor-pointer hover:text-black hover:border-b-2 hover:border-yellow-300"
                                     href={item.href}>     <span className="text-yellow-300 hover:border-none border-0">{index + 1}. </span>
                                     {item.title}</a></li>
                         ))
                     }
+                   {/* </div> */}
                 </div>
 
                  

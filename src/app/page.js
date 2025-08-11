@@ -30,12 +30,12 @@ export default function Home() {
 
           <div className="absolute inset-0 z-10 bg-blue-600 opacity-50 mobile:h-[85vh] xl:h-[100vh] md:h-[50vh] overflow-hidden"></div>
 
-          <div  className="absolute md:top-32 xl:top-28">
+          <div  className=" absolute  md:flex md:items-center ">
 
-            <Image  className=" mobile:hidden   relative z-30 md:right-62 xl:-left-[30rem] top-28 " src={Desenho} alt="desenho" width={'80'} height={'80'}/>
+            {/* <Image  className=" mobile:hidden   relative z-30 md:hidden xl:-left-[30rem] top-28 " src={Desenho} alt="desenho" width={'80'} height={'80'}/> */}
             <div className="flex items-center justify-center flex-col gap-y-6">
-            <h2 className='text-white leading-[1rem]   font-bold text-center mobile:text-[32px] md:text-4xl xl:text-[2.5rem] z-50'> EVENTOS  & <span className="text-yellow-300">CATERING</span></h2>
-            <p className="text-white leading-[1rem] text-center text-2xl z-50">
+            <h2 className='text-white leading-[1rem]   font-bold text-center mobile:text-[32px] md:text-5xl xl:text-[2.5rem] z-50'> EVENTOS  & <span className="text-yellow-300">CATERING</span></h2>
+            <p className="text-white leading-[1.5rem] text-center text-2xl  z-50">
               Celebramos seus momentos <br /> com execelência
             </p>
             <Link  href="#sobre" className=" mt-1 py-2 px-4 animate-fade-right animate-once animate-duration-200 animate-delay-200 hover:bg-amber-300/55 hover:border-white flex flex-row items-center text-lg gap-2 justify-center text-center text-white w-32 border-2 border-white  rounded-3xl z-10">

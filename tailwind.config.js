@@ -10,10 +10,10 @@ export default {
       screens: {
         // Breakpoints personalizados
         'mobile': { raw: '(min-width: 20.5rem) and (max-width: 30rem)' }, // Correção 360px,480px
-        'sm': '31.25rem',
-        'md': '48rem',
-        'lg': '64rem',
-        'xl': '80rem',
+        // 'sm': '31.25rem',
+        // 'md': '48rem',
+        // 'lg': '64rem',
+        // 'xl': '80rem',
         '2xl': '1536px',  
       },
     },

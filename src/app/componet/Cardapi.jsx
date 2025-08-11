@@ -2,16 +2,16 @@
 
 import * as React from "react"
 
-import { Card, CardContent } from "@/components/ui/card";
+// import { Card, CardContent } from "@/components/ui/card";
 
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-//   type CarouselApi,
-} from "@/components/ui/carousel"
+// import {
+//   Carousel,
+//   CarouselContent,
+//   CarouselItem,
+//   CarouselNext,
+//   CarouselPrevious,
+// //   type CarouselApi,
+// } from "@/components/ui/carousel"
 
 import fundo_imagem from '../componet/bolinhos.png';
 import fundo_imagem1 from '../componet/pizza.png';
@@ -64,9 +64,9 @@ export default function CarouselDApiDemo() {
       </div>
       
 
- <div className=" bg-gradient-to-r from bg-[#101010] to-indigo-950 xl:m-16 xl:p-2 xl:mt-0 mobile:px-7 mobile:py-1 md:px-8 md:-mt-4 mobile:h-1/1 md:h-[42rem] md:mb-20 sm:h-64 xl:h-[50.5rem] 2xl:h-96 grid grid-cols-1 gap-4 place-items-center overflow-hidden"  >
+ <div className=" bg-gradient-to-r from bg-[#101010] to-indigo-950 xl:m-16 xl:p-2 xl:mt-0 mobile:px-7 mobile:py-1 md:px-8 md:-mt-4 mobile:h-full md:h-[42rem] md:mb-20 sm:h-64 xl:h-[50.5rem] 2xl:h-96 grid grid-cols-1 gap-4 place-items-center overflow-hidden"  >
 
-<div className="grid bg-zinc-50 gap-1  w-full h-full place-items-center overflow-hidden">
+{/* <div className="grid bg-zinc-50 gap-1  w-full h-full place-items-center overflow-hidden"> */}
   {/* Primeira linha */}
   <div className="w-full flex flex-col md:py-0.5  mobile:gap-y-1 md:flex-row gap-x-1 h-full">
     <div
@@ -95,7 +95,7 @@ export default function CarouselDApiDemo() {
       4
     </div>
   </div>
-</div>
+{/* </div> */}
      
       {/* <div className="text-muted-foreground py-2 text-center text-sm">
         Inicio {current} de {count}
