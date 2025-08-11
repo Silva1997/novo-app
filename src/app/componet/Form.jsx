@@ -66,14 +66,14 @@ export const Formulario = () => {
 
             <div className="mt-[1rem] mb-[0rem] overflow-hidden" >
 
-                <div  className="flex p-2 mobile:flex-col xl:flex-row mobile:gap-8 xl:gap-3 md:gap-3 items-center justify-center">
-                    <input type="text" placeholder="Nome" className="input input-info border-2 border-white  text-white   mobile:w-full mobile:max-w-2xl xl:w-[80rem] md:w-[17rem] h-10  pl-3" />
-                    <input type="text" placeholder="Email" className=" input input-info border-2 border-white  text-white  mobile:w-full mobile:max-w-2xl xl:w-[80rem] md:w-[17rem] h-10  pl-3" />
-                    <input type="number" maxLength={8} max={8} placeholder="Contacto" className=" input input-info border-2 border-white  text-white  mobile:w-full mobile:max-w-2xl xl:w-[80rem] md:w-[17rem] h-10  pl-3" />
+                <div  className="flex w-full mobile:p-1  mobile:flex-col xl:flex-row mobile:gap-8 xl:gap-3 md:gap-3 items-center justify-center">
+                    <input type="text" placeholder="Nome" className="input input-info border-2 border-white  text-white   mobile:w-full mobile:max-w-2xl xl:w-[80rem] md:w-full h-10  pl-3" />
+                    <input type="text" placeholder="Email" className=" input input-info border-2 border-white  text-white  mobile:w-full mobile:max-w-2xl xl:w-[80rem] md:w-full h-10  pl-3" />
+                    <input type="number" maxLength={8} max={8} placeholder="Contacto" className=" input input-info border-2 border-white  text-white  mobile:w-full mobile:max-w-2xl xl:w-[80rem] md:w-full h-10  pl-3" />
                 </div>
 
                 <div className="flex mt-8  flex-col gap-8 items-center justify-center gap-y-4 mobile:px-1 md:mb-12">
-                    <textarea placeholder="Mensagem" className=" textarea-info textarea border-2 border-white text-white mobile:w-full mobile:max-w-2xl md:w-[43rem] xl:w-[76rem] h-36  xl:pl-3" />
+                    <textarea placeholder="Mensagem" className=" textarea-info textarea border-2 border-white text-white mobile:w-full mobile:max-w-2xl md:w-1/1 xl:w-full h-36  pl-3" />
                     <button className=" cursor-pointer text-center text-lg text-white w-44 h-11 bg-amber-300 rounded-2xl ">Enviar</button>
                 </div>
 

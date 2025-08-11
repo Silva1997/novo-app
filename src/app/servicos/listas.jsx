@@ -26,9 +26,9 @@ export default function Servicos() {
             <div
               key={index.id}
               className="flex flex-col  mobile:hover:bg-zinc-50
-              w-full mobile:h-[24rem] md:h-80 xl:h-full bg-white  border-1 hover:border-1 hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px]  space-y-3 relative overflow-hidden" >
+              w-full mobile:h-[24rem] md:h-[27rem] xl:h-full bg-white  border-1 hover:border-1 hover:duration-300 hover:shadow-yellow-300/75 hover:shadow-[3px_0px_3px_0px]  space-y-3 relative overflow-hidden" >
               {/* content  head */}
-              <div className='mobile:h-60 md:h-60 bg-transparent w-full xl:h-56 transition-transform ease-in hover:scale-105  '
+              <div className='mobile:h-60 md:h-72 bg-transparent w-full xl:h-56 transition-transform ease-in hover:scale-105  '
               
               style={{
                   backgroundImage: `url(${index.icones?.src})`,
