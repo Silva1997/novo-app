@@ -6,7 +6,7 @@ import { FaStar } from 'react-icons/fa';
 export default function Servicos() {
 
   return (
-    <div id='servic' className='bg-zinc-50 mobile:h-auto xl:h-[150vh] overflow-hidden mobile:py-8  xl:mt-0' >
+    <div id='servic' className='bg-zinc-50 mobile:h-auto  xl:h-[115vh] lg:h-full overflow-hidden mobile:py-8  xl:mt-0' >
 
       <div className='px-4 py-2 md:py-8 '>
 

@@ -1,7 +1,7 @@
 @config '../../tailwind.config.js';
 @import 'tailwindcss';
-@plugin 'flowbite-react/plugin/tailwindcss';
-@source '../../.flowbite-react/class-list.json';
+/* @plugin 'flowbite-react/plugin/tailwindcss';
+@source '../../.flowbite-react/class-list.json'; */
 @import "tailwindcss-animated";
 @import "tw-animate-css";
 
@@ -24,6 +24,7 @@
 
 :root {
   --clip-path:polygon(0 0, 100% 0, 100% 78%, 0% 100%);
+  --clip-path-3:polygon(0 0, 100% 0, 100% 90%, 0% 100%);
   --clip-path-2: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   --color-background: var(--background);
   --text-font-family:"Dancing Script", cursive;
@@ -60,6 +61,15 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+}
+
+.image-transicao:hover{
+background-color: #fff236;
+overflow: hidden;
+   transform: translateX(12px);
+   transition: transform 0.6s ease-in-out , opacity 0.6s ease-in-out;
+   transition-delay: 0.5s;
+   opacity: 0; /* Torna o texto visível por padrão */
 }
 
 .text-transicao{

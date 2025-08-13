@@ -25,10 +25,10 @@ export default function Home() {
         {/* Fundo do do carosel id='fundo-imagem' */}
       
         <div 
-        className="grid  overflow-hidden grid-cols-1 mobile:grid-rows-[85vh] xl:grid-rows-[100vh] md:grid-rows-[50vh] place-items-center bg-[url('../../src/app/assets/fundo1.png')] bg-cover bg-no-repeat bg-center"
+        className="grid  overflow-hidden grid-cols-1 mobile:grid-rows-[85vh] xl:grid-rows-[100vh] lg:grid-rows-[80vh] md:grid-rows-[50vh] place-items-center bg-[url('../../src/app/assets/fundo1.png')] bg-cover bg-no-repeat bg-center"
         >
 
-          <div className="absolute inset-0 z-10 bg-blue-600 opacity-50 mobile:h-[85vh] xl:h-[100vh] md:h-[50vh] overflow-hidden"></div>
+          <div className="absolute inset-0 z-10 bg-blue-600 opacity-50 mobile:h-[85vh] xl:h-[100vh] lg:h-[80vh] md:h-[50vh] overflow-hidden"></div>
 
           <div  className=" absolute  md:flex md:items-center ">
 
@@ -52,9 +52,9 @@ export default function Home() {
 
         {/* Sobre a Empresa */}
         <div id="sobre"  className="bg-zinc-50" >
-          <div   className=" mobile:[clip-path:var(--clip-path-2)] xl:[clip-path:var(--clip-path)] bg-fixed" >
+          <div   className=" mobile:[clip-path:var(--clip-path-2)] lg:[clip-path:var(--clip-path-2)] md:[clip-path:var(--clip-path-3)] xl:[clip-path:var(--clip-path)] bg-fixed" >
 
-            <div id="div-margin-" className="bg-gradient-to-r from bg-[#101010] to-indigo-950 mobile:py-8 mobile:px-4  md:p-8  xl:px-16  md:gap-4 xl:gap-8 justify-center  mobile:flex mobile:flex-col mobile:h-full md:grid md:grid-cols-1   xl:flex flex-row items-center lg:h-96 " >
+            <div id="div-margin-" className="bg-gradient-to-r from bg-[#101010] to-indigo-950 mobile:py-8 mobile:px-4  md:p-8  xl:px-16 xl:h-[25rem]  md:gap-4 xl:gap-8 justify-center  mobile:flex mobile:flex-col mobile:h-full md:grid md:grid-cols-1    xl:flex flex-row items-center lg:h-full " >
 
               <div className=" relative xl:-top-12" >
 
@@ -90,7 +90,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className=" relative md:-top-0.5 xl:-top-10" >
+              <div className="  relative md:-top-0.5   xl:-top-10 lg:top-0" >
                 <div style={{ marginBottom: '0.75rem' }} className="flex flex-row items-center justify-start gap-1 leading-4">
                   <Image style={{ padding: '1.5px' }} placeholder="empty" className="bg-amber-300 rounded-3xl object-cover" src={icon4} alt="miss" width={30} height={30} />
                   <h6 className="text-yellow-300 text-start font-montserrat font-medium  text-2xl  mobile:-my-2">
@@ -99,11 +99,11 @@ export default function Home() {
                 </div>
 
                 {/* </span> */}
-                <p className="text-white mobile:text-start mobile:text-md md:text-md xl:text-lg/normal xl:text-start font-montserrat font-[400] mobile:py-3">
+                <p className="text-white   mobile:text-start mobile:text-md md:text-md xl:text-lg/normal xl:text-start font-montserrat font-[400] mobile:py-3">
                   Dedicação ao profissionalismo.<br className="xl:hidden" />
                   Busca contínua pela excelência.<br className="xl:hidden" />
-                  Trabalho conjunto e colaborativo.
-                  Foco em soluções inovadoras.
+                  Trabalho conjunto e colaborativo. | 
+                  Foco em soluções inovadoras. 
                 </p>
               </div>
 

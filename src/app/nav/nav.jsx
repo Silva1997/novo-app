@@ -39,14 +39,14 @@ export default function Navegador() {
             <nav
 
                 style={{ padding: "0.75rem" }}
-                className="flex  md:bg-white sm:bg-amber-700 lg:bg-violet-500 mobile:bg-white xl:bg-white  fixed top-0 w-full h-16 z-100 overflow-hidden items-center justify-between  mobile:justify-end"
+                className="flex  md:bg-white sm:bg-amber-700  mobile:bg-white xl:bg-white  fixed top-0 w-full h-16 z-100 overflow-hidden items-center justify-between  mobile:justify-end"
             >
                  
 
 
-{/* Mobile */}
+{/* Mobile dispositivos moveis */}
 
-<section className=' xl:hidden md:hidden cursor-pointer  overflow-hidden flex flex-row gap-x-1  items-center relative right-[13.3rem]'>
+<section className=' xl:hidden md:hidden  cursor-pointer  overflow-hidden flex flex-row gap-x-1  items-center relative right-[13.3rem]'>
                         
                         {/* <Image className='p-0.5' src={Icon} alt='icon logotipo' width={'50'} height={'50'} /> */}
                         <div className='flex flex-col gap-0 m-0 p-0'>
@@ -71,9 +71,9 @@ export default function Navegador() {
 
 
 {/* Desktop */}
-                <div className="flex flex-row items-center  w-full   p-1 overflow-hidden   gap-6 md:justify-around xl:justify-end-safe mobile:hidden">
+                <div className="flex flex-row items-center  w-full   p-1 overflow-hidden   gap-6 md:justify-around xl:justify-end-safe lg:justify-around mobile:hidden">
 
-                    <section className='  cursor-pointer w-32  overflow-hidden flex flex-row gap-x-1  items-center relative md:justify-start  xl:right-[39.5rem]'>
+                    <section className='  cursor-pointer w-32  overflow-hidden flex flex-row gap-x-1  items-center relative md:justify-start xl:right-[40rem] '>
                         
                         {/* <Image className='p-0.5' src={Icon} alt='icon logotipo' width={'57'} height={'53'} /> */}
                         <div className='flex flex-col justify-end gap-0 m-0 p-0'>
